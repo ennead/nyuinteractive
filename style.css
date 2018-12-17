@@ -20,12 +20,14 @@
 	font-weight: Semibold;
 }
 
-h2 {
+body {
     font-family: 'FoundersGrotesk';
     font-size: 36px;
     font-weight: Semibold;
     color: #333333;
     padding-bottom: 15px;
     padding-top: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
+
+		background-color: #EBEBEB;
 }
