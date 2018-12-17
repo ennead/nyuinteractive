@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'FoundersGrotesk';
+	src: url('fonts/FoundersGrotesk-Light.otf');
+	src:
+		local('FoundersGrotesk Light'),
+		local('FoundersGrotesk-Light'),
+		url('fonts/FoundersGrotesk-Light.otf')
+		format('opentype');
+	font-weight: light;
+}
+/*semibold version*/
+@font-face {
+	font-family: 'FoundersGrotesk';
+	src: url('fonts/FoundersGrotesk-Semibold.otf');
+	src:
+		local('FoundersGrotesk Semibold'),
+		local('FoundersGrotesk-Semibold'),
+		url('fonts/FoundersGrotesk-Semibold.otf')
+		format('opentype');
+	font-weight: Semibold;
+}
+
+h2 {
+    font-family: 'FoundersGrotesk';
+    font-size: 36px;
+    font-weight: Semibold;
+    color: #333333;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
