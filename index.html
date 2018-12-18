@@ -2,41 +2,54 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>
-  index
+  <meta charset="utf-8">
+  <title>
+    index
   </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- style -->
-<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<!-- material design icons -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- material design icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
 
 </head>
 
 <body>
 
+  <div class="navBox"></div>
+
   <ul class="navBar" role="navigation">
     <li class="navLogo"><a href="index.html"><img src="assets/logos/ennead_black.png" alt="Ennead Logo" style="width:126px;height:26px;"></a></li>
     <li class="navActive">Stories</li>
-    <li>360° Tour</li>
-    <li>Timeline</li>
-    <li>Project List</li>
+    <li class="navLink">360° Tour</li>
+    <li class="navLink">Timeline</li>
+    <li class="navLink">Project List</li>
   </ul>
 
-<div class="scrollingContainer">
-<div class="scrollingDiagram"><img src="assets/animations/filler.PNG"></div>
-<div class="scrollingText">
-  <h3>Patient Floor</h3>
-  <h2>Visitor Arrival and Navigation</h2>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin. Aliquam a odio orci.
+  <ul class="progressBar" role="navigation">
+    <li class="progressStep"></li>
+    <li class="progressStep"></li>
+    <li class="progressStep"></li>
+    <li class="progressStep"></li>
+    <li class="progressStep"></li>
+  </ul>
 
-Praesent porta ipsum a turpis efficitur consectetur. Cras consequat mollis diam sed rhonassa eget sem venenatis neque.
+
+  <div class="scrollingContainer">
+
+    <div class="scrollingDiagram"><img src="assets/animations/filler.PNG" style="width:120%;height:120%;"></div>
+    <div class="scrollingText">
+      <h3>Patient Floor</h3>
+      <h2>Visitor Arrival and Navigation</h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin.
+      <br><br>
+      Praesent porta ipsum a turpis efficitur consectetur. Cras consequat mollis diam sed rhonassa eget sem venenatis neque.
+    </div>
   </div>
-</div>
 
 
 </body>
