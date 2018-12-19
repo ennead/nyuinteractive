@@ -47,11 +47,11 @@
 
 h2{
 	font-family: 'FoundersGrotesk Semibold';
-	font-size: 42px;
+	font-size: 22px;
 	font-weight: Semibold;
 	color: #333333;
 	letter-spacing: 0px;
-	line-height: 45px;
+	line-height: 40px;
 }
 
 h3{
@@ -65,16 +65,83 @@ h3{
 
 body {
 	font-family: 'FoundersGrotesk Light';
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: light;
 	color: #333333;
 	letter-spacing: 0px;
-	line-height: 35px;
+	line-height: 20px;
 
 	margin: 0 5% 0 5%;
 	padding-bottom: 0px;
 	padding-top: 0px;
 	background-color: #EBEBEB;
+}
+
+
+@media (min-width:480px) {
+  h2 {
+    font-size: 22px;
+		line-height: 18px;}
+	h3 {
+		  font-size: 12px;}
+	body{
+			font-size: 16px;
+			line-height: 28px;
+		}
+	.scrollingDiagram{
+		display: none;
+	}
+}
+
+@media (min-width:600px) {
+  h2 {
+    font-size: 28px;
+		line-height: 24px;}
+	h3 {
+		  font-size: 16px;}
+	body{
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.scrollingDiagram{
+			display:flex;
+		}
+}
+
+@media (min-width:768px) {
+  h2 {
+    font-size: 28px;
+		line-height: 30px;}
+	h3 {
+		  font-size: 16px;}
+	body{
+			font-size: 16px;
+			line-height: 28px;
+		}
+}
+
+@media (min-width:1024px) {
+  h2 {
+    font-size: 32px;
+		line-height: 30px;}
+	h3 {
+		  font-size: 12px;}
+	body{
+			font-size: 16px;
+			line-height: 30px;
+		}
+}
+
+@media (min-width:1600px) {
+  h2 {
+    font-size: 42px;
+		line-height: 40px;}
+	h3 {
+	  font-size: 14px;}
+	body{
+		font-size: 18px;
+		line-height: 35px;
+	}
 }
 
 ul {
@@ -170,16 +237,8 @@ li:hover{
 	top: 13%;
 	left: 5%;
 	padding-left: 3%;
-	opacity: .75;
-	transition: opacity .2s ease-out;
-	-moz-transition: opacity .2s ease-out;
-	-webkit-transition: opacity .2s ease-out;
-	-o-transition: opacity .2s ease-out;
 }
 
-.backButton:hover{
-	opacity: 1
-}
 
 .backButton:hover #backArrow{
 	transform: translate3d(-12px, 0px, 0px);
@@ -306,6 +365,7 @@ li:hover{
 
 .material-icons{
 	vertical-align: middle;
+	font-size: 2px;
 	padding-bottom: 2px;
 }
 
