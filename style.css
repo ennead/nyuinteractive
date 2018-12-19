@@ -56,12 +56,10 @@ h2{
 
 h3{
 	font-family: 'FoundersGrotesk Semibold';
-	font-size: 16px;
-	font-weight: Semibold;
+	font-size: 14px;
 	color: #333333;
-	letter-spacing: 0px;
+	letter-spacing: .03em;
 	line-height: 0;
-	opacity: .8;
 }
 
 
@@ -162,18 +160,52 @@ li:hover{
   -o-transition: opacity .2s ease-out;
 }
 
+.backButton{
+	position: absolute;
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+	cursor: pointer;
+
+	top: 13%;
+	left: 5%;
+	padding-left: 3%;
+	opacity: .75;
+	transition: opacity .2s ease-out;
+	-moz-transition: opacity .2s ease-out;
+	-webkit-transition: opacity .2s ease-out;
+	-o-transition: opacity .2s ease-out;
+}
+
+.backButton:hover{
+	opacity: 1
+}
+
+#backArrow{
+	padding-left: 18px;
+}
+
 
 
 .progressBar{
 	display: flex;
 	flex-direction: column;
 	position: absolute;
+	align-items: center;
+
 	margin: 0;
 	top: 23%;
 	left: 5%;
 	padding-left: 3%;
-	opacity: 1;
+	opacity: .75;
+	transition: opacity .2s ease-out;
+	-moz-transition: opacity .2s ease-out;
+	-webkit-transition: opacity .2s ease-out;
+	-o-transition: opacity .2s ease-out;
+}
 
+.progressBar:hover{
+	opacity: 1;
 }
 
 .progressStep{
@@ -182,6 +214,10 @@ li:hover{
   border-radius: 1em;
   background: #333333;
   margin-bottom: 8em;
+}
+
+.progressStep:hover{
+		cursor: pointer;
 }
 
 .progressStep::before{
