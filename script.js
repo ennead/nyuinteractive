@@ -21,7 +21,13 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Arrival and Waiting");
-      $("#diagram").attr('src', 'assets/diagrams/entrance.png').stop(true,true).hide().fadeIn("slow");
+
+        $("#diagram").fadeOut("slow", function() {
+           $("#diagram").attr('src','assets/diagrams/entrance.png');
+       })
+       .fadeIn("slow");
+
+      // $("#diagram").attr('src', 'assets/diagrams/entrance.png').stop(true,true).hide().fadeIn("slow");
     }
   }
 
