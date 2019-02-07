@@ -16,9 +16,21 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
 
+  <!-- scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+
+  <script src= 'script.js'></script>
+
 </head>
 
 <body>
+
+  <div id="trigger"></div>
+  <div id="block">
 
   <div class="navBox"></div>
 
@@ -30,6 +42,7 @@
     <li class="navLink">Project List <i class="material-icons md-18" style="font-size: 16px">expand_more</i></li>
   </ul>
 
+
   <div class="backButton"><h3>Back<img src="assets\icons\black_arrow.png" id="backArrow" alt="back arrow" style="width:75px;height:14px"></h3></div>
 
 
@@ -39,13 +52,13 @@
     <li class="progressStep"> </li>
     <li class="progressStep"> </li>
     <li class="progressStep"> </li>
-    <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18">chevron_left</i>02</span> / 05<i class="material-icons md-18">chevron_right</i></span>
+    <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18">chevron_left</i><span id="slideCounter">01</span></span> / 05<i class="material-icons md-18">chevron_right</i></span>
   </ul>
 
   <ul class="progressBarLinks">
     <a href="https://www.google.com"><li class="progressLink"></li></a>
-    <li class="progressLink" id="activeLink"> </li>
     <li class="progressLink"> </li>
+    <li class="progressLink" id="activeLink"> </li>
     <li class="progressLink"> </li>
     <li class="progressLink"> </li>
   </ul>
@@ -53,16 +66,16 @@
 
   <div class="scrollingContainer">
 
-    <div class="scrollingDiagram"><img src="assets\animations\filler.PNG" style="width:120%;height:120%;"></div>
+    <div class="scrollingDiagram"><img id="diagram" src="assets/diagrams/fullHighlight.png" style="width:150%;height:150%;"></div>
     <div class="scrollingText">
-      <h3>Patient Floor</h3>
-      <h2>Visitor Arrival and Navigation</h2>
+      <h3>OR Platform</h3>
+      <h2 id='title'>Section 1</h2>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin.
       <br><br>
       Praesent porta ipsum a turpis efficitur consectetur. Cras consequat mollis diam sed rhonassa eget sem venenatis neque.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin.
     </div>
   </div>
-
+</div>
 
 </body>
 

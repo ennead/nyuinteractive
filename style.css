@@ -153,11 +153,21 @@ li:hover{
 	cursor: pointer;
 }
 
+#block{
+	width: 100%;
+	/* position: relative; */
+	top: 0;
+	left: 0;
+	margin-left: 0;
+	padding-left:0;
+}
+
 .navBox{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100px;
+	min-height: 50px;
 	width: 100%;
 	clear: both;
 	margin: 0 0 0 0;
@@ -228,7 +238,7 @@ li:hover{
 }
 
 .backButton{
-	position: absolute;
+	position: fixed;
 	display: flex;
 	vertical-align: middle;
 	align-items: center;
@@ -253,11 +263,11 @@ li:hover{
 .progressBar{
 	display: flex;
 	flex-direction: column;
-	position: absolute;
+	position: fixed;
 	align-items: center;
 
 	margin: 0;
-	top: 23%;
+	top: 25%;
 	left: 5%;
 	padding-left: 3%;
 	opacity: .8;
@@ -310,11 +320,11 @@ li:hover{
 .progressBarLinks{
 	display: flex;
 	flex-direction: column;
-	position: absolute;
+	position: fixed;
 	align-items: center;
 
 	margin: 0;
-	top: 22.5%;
+	top: 24.5%;
 	left: 4.65%;
 	padding-left: 3%;
 	transition: opacity .2s ease-out;
@@ -363,6 +373,7 @@ li:hover{
 	-o-transform: rotate(-90deg);
 }
 
+
 .material-icons{
 	vertical-align: middle;
 	font-size: 2px;
@@ -374,25 +385,32 @@ li:hover{
 	flex-wrap: wrap;
 	height: 60vh;
 	/* min-width: 260px;*/
-	margin-top: 100px;
+	margin-top: 7%;
+	margin-left: 0;
 	padding-bottom: auto;
-	padding-left: 3%;
+	padding-left: 0;
 	padding-right: 3%;
 	text-align: right;
 	align-items: center;
 }
 
 .scrollingDiagram{
-	padding-top: 150px;
-	padding-left: 8%;
+	padding-top: 100px;
+	padding-left: 0;
 	padding-right: 12%;
 	position: relative;
 	flex: 5;
+	align-items: left;
 }
+
 
 .scrollingText{
 	padding-top: 80px;
 	padding-bottom: 40px;
 	padding-left: 60px;
-	flex: 2 120px;
+	flex: 2 90px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
