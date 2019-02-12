@@ -1,4 +1,6 @@
-var sectionduration = 300;
+var w = window.innerWidth;
+var sectionduration = w/4;
+var backDiagramURL;
 
 $(function () { // wait for document ready
   // init controller
@@ -9,25 +11,19 @@ $(function () { // wait for document ready
   // show pin state
   function updateBox (e) {
     if (e.type == "enter") {
-      $("#slideCounter").text("01");
-      $("#title").text("Overview");
-      $("#diagram").attr('src', 'assets/diagrams/fullHighlight.png').hide().fadeIn("slow").fadeIn("slow");
-    } else {
-      $("#title").text("Overview");
-    }
-  }
-
-  function updateBox1 (e) {
-    if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Arrival and Waiting");
+      $("#diagramBack").attr('src', backDiagramURL);
+      $("#diagramFront").attr('src', 'assets/diagrams/entrance.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      backDiagramURL = 'assets/diagrams/entrance.png';
 
-        $("#diagram").fadeOut("slow", function() {
-           $("#diagram").attr('src','assets/diagrams/entrance.png');
-       })
-       .fadeIn("slow");
+    } else {
+      $("#slideCounter").text("01");
+      $("#title").text("Overview");
+      $("#diagramBack").attr('src', backDiagramURL);
+      $("#diagramFront").attr('src', 'assets/diagrams/fullHighlight.png').stop(true,true).hide().fadeIn("slow");
+      backDiagramURL = 'assets/diagrams/fullHighlight.png';
 
-      // $("#diagram").attr('src', 'assets/diagrams/entrance.png').stop(true,true).hide().fadeIn("slow");
     }
   }
 
@@ -35,7 +31,9 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("03");
       $("#title").text("Flexible Prep and Recovery");
-      $("#diagram").attr('src', 'assets/diagrams/blueHighlights.png').stop(true,true).hide().fadeIn("slow");
+      $("#diagramBack").attr('src', backDiagramURL);
+      $("#diagramFront").attr('src', 'assets/diagrams/blueHighlights.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      backDiagramURL = 'assets/diagrams/blueHighlights.png';
     }
   }
 
@@ -43,7 +41,9 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("04");
       $("#title").text("OR Circulation and Views");
-      $("#diagram").attr('src', 'assets/diagrams/orangeHighlight.png').stop(true,true).hide().fadeIn("slow");
+      $("#diagramBack").attr('src', backDiagramURL);
+      $("#diagramFront").attr('src', 'assets/diagrams/orangeHighlight.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      backDiagramURL = 'assets/diagrams/orangeHighlight.png';
     }
   }
 
@@ -51,24 +51,18 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({triggerElement: "#trigger", duration: sectionduration, triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox)
-    // .addIndicators() // add indicators (requires plugin)
+    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   new ScrollMagic.Scene({triggerElement: "#trigger", duration: sectionduration, offset: sectionduration, triggerHook: 0})
     .setPin("#block")
-    .on("enter leave", updateBox1)
-    // .addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-  new ScrollMagic.Scene({triggerElement: "#trigger", duration: sectionduration, offset: sectionduration*2, triggerHook: 0})
-    .setPin("#block")
     .on("enter leave", updateBox2)
-    // .addIndicators() // add indicators (requires plugin)
+    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "#trigger", duration: sectionduration, offset: sectionduration*3, triggerHook: 0})
+  new ScrollMagic.Scene({triggerElement: "#trigger", duration: sectionduration, offset: (sectionduration*2), triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox3)
-    // .addIndicators() // add indicators (requires plugin)
+    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 });

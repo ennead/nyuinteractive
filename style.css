@@ -162,6 +162,10 @@ li:hover{
 	padding-left:0;
 }
 
+.spacer{
+	height: 300px;
+}
+
 .navBox{
 	position: fixed;
 	top: 0;
@@ -173,8 +177,8 @@ li:hover{
 	margin: 0 0 0 0;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-	z-index: -1;
 }
+
 
 .navBar{
 	display: flex;
@@ -190,8 +194,8 @@ li:hover{
 
 
 	margin: 0 0 0 0;
-	padding-left: 3%;
-	padding-right: 3%;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
 	height: 100px;
 }
 
@@ -390,25 +394,38 @@ li:hover{
 	padding-bottom: auto;
 	padding-left: 0;
 	padding-right: 3%;
-	text-align: right;
+	text-align: left;
 	align-items: center;
 }
 
 .scrollingDiagram{
-	padding-top: 100px;
-	padding-left: 0;
-	padding-right: 12%;
-	position: relative;
-	flex: 5;
-	align-items: left;
+	top: 25%;
+	left: 100px;
+	position: fixed;
+	/* flex: 5; */
+	/* align-items: left; */
+}
+
+#diagramFront{
+	top: 18%;
+	left: 100px;
+	position: fixed;
+	z-index: 1;
+}
+
+#diagramBack{
+	top: 18%;
+	left: 100px;
+	position: fixed;
+	z-index: -1;
 }
 
 
 .scrollingText{
-	padding-top: 80px;
-	padding-bottom: 40px;
-	padding-left: 60px;
-	flex: 2 90px;
+	position: fixed;
+	top: 30%;
+	width: 22.5%;
+	right: 100px;
 }
 
 ::-webkit-scrollbar {
