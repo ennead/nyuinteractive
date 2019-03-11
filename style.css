@@ -353,7 +353,7 @@ li:hover{
 }
 
 .progressCounter{
-	position:absolute;
+	position:fixed;
 	display: inline;
 
 	font-family: 'FoundersGrotesk light';
@@ -363,7 +363,7 @@ li:hover{
 	line-height: 0;
 	white-space: nowrap;
 	float: left;
-	top: 37.5em;
+	bottom: 10%;
 	padding-bottom: 5em;
 	vertical-align: middle;
 
@@ -399,7 +399,7 @@ li:hover{
 }
 
 .scrollingDiagram{
-	top: 25%;
+	top: 30%;
 	left: 100px;
 	position: fixed;
 	/* flex: 5; */
@@ -407,17 +407,17 @@ li:hover{
 }
 
 #diagramFront{
-	top: 18%;
-	left: 100px;
+	top: 20%;
+	left: 180px;
 	position: fixed;
-	z-index: 1;
+	z-index: -1;
 }
 
 #diagramBack{
-	top: 18%;
-	left: 100px;
+	top: 20%;
+	left: 180px;
 	position: fixed;
-	z-index: -1;
+	z-index: -2;
 }
 
 
