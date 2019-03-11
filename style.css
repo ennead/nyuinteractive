@@ -286,11 +286,12 @@ li:hover{
 }
 
 .progressStep{
-	width: .4em;
-	height: .4em;
-	border-radius: 1em;
+	width: .38em;
+	height: .38em;
+	border-radius: .76em;
 	background: #333333;
-	margin-bottom: 8em;
+	margin-bottom: 10.82em;
+	margin-left: .1em;
 }
 
 .progressStep:hover{
@@ -315,7 +316,7 @@ li:hover{
 .progressActive{
 	width: .6em;
 	height: .6em;
-	border-radius: 1em;
+	border-radius: 1.2em;
 	background: #333333;
 	margin-bottom: 9em;
 	opacity: .5;
@@ -342,14 +343,21 @@ li:hover{
 .progressLink{
 	width: 1.2em;
 	height: 1.2em;
-	border-radius: 2em;
+	border-radius: 2.4em;
 	opacity: 0;
 	background: #333333;
-	margin-bottom: 7.2em;
+	margin-bottom: 9.95em;
+	margin-right: .1em;
 }
 
-#activeLink{
+.activeLink{
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 2.4em;
 	opacity: .25;
+	background: #333333;
+	margin-bottom: 9.95em;
+	margin-right: .1em;
 }
 
 .progressCounter{
