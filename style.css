@@ -47,7 +47,7 @@
 
 h2{
 	font-family: 'FoundersGrotesk Semibold';
-	font-size: 22px;
+	font-size: 42px;
 	font-weight: Semibold;
 	color: #333333;
 	letter-spacing: 0px;
@@ -56,7 +56,7 @@ h2{
 
 h3{
 	font-family: 'FoundersGrotesk Semibold';
-	font-size: 12px;
+	font-size: 14px;
 	color: #333333;
 	letter-spacing: .03em;
 	line-height: 0;
@@ -65,83 +65,16 @@ h3{
 
 body {
 	font-family: 'FoundersGrotesk Light';
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: light;
 	color: #333333;
 	letter-spacing: 0px;
-	line-height: 20px;
+	line-height: 35px;
 
 	margin: 0 5% 0 5%;
 	padding-bottom: 0px;
 	padding-top: 0px;
 	background-color: #EBEBEB;
-}
-
-
-@media (min-width:480px) {
-  h2 {
-    font-size: 22px;
-		line-height: 18px;}
-	h3 {
-		  font-size: 12px;}
-	body{
-			font-size: 16px;
-			line-height: 28px;
-		}
-	.scrollingDiagram{
-		display: none;
-	}
-}
-
-@media (min-width:600px) {
-  h2 {
-    font-size: 28px;
-		line-height: 24px;}
-	h3 {
-		  font-size: 16px;}
-	body{
-			font-size: 16px;
-			line-height: 20px;
-		}
-		.scrollingDiagram{
-			display:flex;
-		}
-}
-
-@media (min-width:768px) {
-  h2 {
-    font-size: 28px;
-		line-height: 30px;}
-	h3 {
-		  font-size: 16px;}
-	body{
-			font-size: 16px;
-			line-height: 28px;
-		}
-}
-
-@media (min-width:1024px) {
-  h2 {
-    font-size: 32px;
-		line-height: 30px;}
-	h3 {
-		  font-size: 12px;}
-	body{
-			font-size: 16px;
-			line-height: 30px;
-		}
-}
-
-@media (min-width:1600px) {
-  h2 {
-    font-size: 42px;
-		line-height: 40px;}
-	h3 {
-	  font-size: 14px;}
-	body{
-		font-size: 18px;
-		line-height: 35px;
-	}
 }
 
 ul {
@@ -163,7 +96,7 @@ li:hover{
 }
 
 .spacer{
-	height: 300px;
+	height: 3000px;
 }
 
 .navBox{
@@ -171,7 +104,7 @@ li:hover{
 	top: 0;
 	left: 0;
 	height: 100px;
-	min-height: 50px;
+	/* min-height: 50px; */
 	width: 100%;
 	clear: both;
 	margin: 0 0 0 0;
@@ -204,6 +137,11 @@ li:hover{
 	margin-right: auto;
 	text-align: left;
 	opacity: 1;
+}
+
+#enneadLogo{
+	width:120px;
+	height:26px;
 }
 
 .navActive{
@@ -417,6 +355,8 @@ li:hover{
 #diagramFront{
 	top: 20%;
 	left: 180px;
+	width:55%;
+	height: auto;
 	position: fixed;
 	z-index: -1;
 }
@@ -424,6 +364,8 @@ li:hover{
 #diagramBack{
 	top: 20%;
 	left: 180px;
+	width:55%;
+	height: auto;
 	position: fixed;
 	z-index: -2;
 }
@@ -437,5 +379,220 @@ li:hover{
 }
 
 ::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
+
+@media all and (max-width:480px) {
+	h2 {
+		font-size: 22px;
+		line-height: 18px;}
+
+	h3 {
+		font-size: 12px;}
+
+	body{
+		font-size: 16px;
+		line-height: 28px;}
+
+	#diagramFront{
+		top: 62%;
+		left: 7.5%;
+		width:82.5%;
+		height: auto;
+		position: fixed;
+		z-index: -1;}
+
+			#diagramBack{
+				top: 62%;
+				left: 7.5%;
+				width:82.5%;
+				height: auto;
+				position: fixed;
+				z-index: -2;
+			}
+
+			.scrollingText{
+				position:fixed;
+				top: 22.5%;
+				/* width: 568px; */
+				width: 78%;
+				padding-left: 2.5%;
+				padding-right: 2.5%;
+				right: auto;
+			}
+
+			.progressBar{
+				display: none;
+			}
+			.progressBarLinks{
+				display: none;
+			}
+		}
+
+		#enneadLogo{
+			width:80px;
+			height:auto;
+		}
+
+		.navBar{
+			height: 70px;
+		}
+
+		.navBox{
+			height: 70px;
+		}
+
+	}
+
+	@media all and (max-width:600px) and  (min-width:481px){
+		h2 {
+			font-size: 28px;
+			line-height: 24px;}
+		h3 {
+				font-size: 16px;}
+		body{
+					font-size: 16px;
+					line-height: 20px;
+				}
+				.progressBar{
+					display: none;
+				}
+				.progressBarLinks{
+					display: none;
+				}
+				#enneadLogo{
+					width:120px;
+					height:26px;
+				}
+			}
+
+			@media all and (max-width:768px) and (min-width:601px){
+				h2 {
+					font-size: 32px;
+					line-height: 30px;}
+					h3 {
+						font-size: 18px;}
+						body{
+							font-size: 18px;
+							line-height: 32px;
+						}
+
+						#diagramFront{
+							top: 52%;
+							left: 7.5%;
+							width:82.5%;
+							height: auto;
+							position: fixed;
+							z-index: -1;
+						}
+
+						#diagramBack{
+							top: 52%;
+							left: 7.5%;
+							width:82.5%;
+							height: auto;
+							position: fixed;
+							z-index: -2;
+						}
+
+						.scrollingText{
+							position:fixed;
+							top: 22.5%;
+							/* width: 568px; */
+							width: 78%;
+							padding-left: 2.5%;
+							padding-right: 2.5%;
+							right: auto;
+						}
+
+						.progressBar{
+							display: none;
+						}
+						.progressBarLinks{
+							display: none;
+						}
+					}
+
+					.navBar{
+						height: 90px;
+					}
+
+					.navBox{
+						height: 90px;
+					}
+
+					#enneadLogo{
+						width:120px;
+						height:26px;
+					}
+
+					@media all and (max-width:1024px) and (min-width:769px){
+						h2 {
+							font-size: 32px;
+							line-height: 30px;}
+							h3 {
+								font-size: 12px;}
+								body{
+									font-size: 14px;
+									line-height: 30px;
+								}
+
+								.navBar{
+									height: 90px;
+								}
+
+								.navBox{
+									height: 90px;
+								}
+
+								#diagramFront{
+									top: 32%;
+									left: 120px;
+									width:55%;
+									height: auto;
+									position: fixed;
+									z-index: -1;
+								}
+
+								#diagramBack{
+									top: 32%;
+									left: 120px;
+									width:55%;
+									height: auto;
+									position: fixed;
+									z-index: -2;
+								}
+
+								.scrollingText{
+									position: fixed;
+									top: 27%;
+									width: 22.5%;
+									right: 100px;
+								}
+
+								.progressCounter{
+									display: none;
+								}
+
+								#enneadLogo{
+									width:120px;
+									height:26px;
+								}
+							}
+
+							@media all and (max-width:1600px) and (min-width:1025px) {
+								h2 {
+									font-size: 42px;
+									line-height: 40px;}
+									h3 {
+										font-size: 14px;}
+										body{
+											font-size: 18px;
+											line-height: 35px;
+										}
+
+										#enneadLogo{
+											width:120px;
+											height:26px;
+										}
+									}

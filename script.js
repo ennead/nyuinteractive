@@ -15,6 +15,7 @@ $(function () { // wait for document ready
       $("#title").text("Arrival and Waiting");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/OR Platform/entrance.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin. Praesent porta ipsum a turpis efficitur consectetur. Cras consequat mollis diam sed rhonassa eget sem venenatis neque.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada.");
       backDiagramURL = 'assets/diagrams/OR Platform/entrance.png';
       $("#pl1,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl2").addClass("activeLink")
@@ -25,6 +26,7 @@ $(function () { // wait for document ready
       $("#title").text("Overview");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/OR Platform/fullHighlight.png').stop(true,true).hide().fadeIn("slow");
+      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin. Praesent porta ipsum a turpis efficitur consectetur. Cras consequat mollis diam sed rhonassa eget sem venenatis neque.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada.");
       backDiagramURL = 'assets/diagrams/OR Platform/fullHighlight.png';
       $("#pl2,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl1").addClass("activeLink")
