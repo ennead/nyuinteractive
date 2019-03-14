@@ -67,7 +67,7 @@ $(function () { // wait for document ready
   function updateBox4 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("05");
-      $("#title").text("Hassenfeld's Children's Hospital");
+      $("#title").text("Hassenfeld Children's Hospital");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Section/hch_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada. Donec scelerisque libero sit amet augue volutpat, sed feugiat dui sollicitudin. Praesent porta ipsum a turpis efficitur consectetur. Cras consequat mollis diam sed rhonassa eget sem venenatis neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis eros non blandit malesuada.");
