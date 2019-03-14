@@ -64,19 +64,19 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({triggerElement: "a#section2", duration: sectionduration, triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   new ScrollMagic.Scene({triggerElement: "a#section3", duration: sectionduration, offset: sectionduration, triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox2)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
   new ScrollMagic.Scene({triggerElement: "a#section4", duration: sectionduration, offset: (sectionduration*2), triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox3)
-    .addIndicators() // add indicators (requires plugin)
+    // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 });
