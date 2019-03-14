@@ -526,7 +526,7 @@ li:hover{
 						height:26px;
 					}
 
-					@media all and (max-width:1024px) and (min-width:769px){
+					@media all and (max-width:1600px) and (min-width:769px){
 						h2 {
 							font-size: 32px;
 							line-height: 30px;}
@@ -546,7 +546,7 @@ li:hover{
 								}
 
 								#diagramFront{
-									top: 32%;
+									top: 30%;
 									left: 120px;
 									width:55%;
 									height: auto;
@@ -555,7 +555,7 @@ li:hover{
 								}
 
 								#diagramBack{
-									top: 32%;
+									top: 30%;
 									left: 120px;
 									width:55%;
 									height: auto;
@@ -580,7 +580,7 @@ li:hover{
 								}
 							}
 
-							@media all and (max-width:1600px) and (min-width:1025px) {
+							/* @media all and (max-width:1600px) and (min-width:1025px) {
 								h2 {
 									font-size: 42px;
 									line-height: 40px;}
@@ -595,4 +595,4 @@ li:hover{
 											width:120px;
 											height:26px;
 										}
-									}
+									} */
