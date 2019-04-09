@@ -304,8 +304,12 @@ a {
 	margin-right: .1em;
 }
 
+#prevSection{
+	opacity: .2;
+}
+
 .progressCounter{
-	position:fixed;
+	position: absolute;
 	display: inline;
 
 	font-family: 'FoundersGrotesk light';
@@ -315,8 +319,8 @@ a {
 	line-height: 0;
 	white-space: nowrap;
 	float: left;
-	bottom: 10%;
-	padding-bottom: 5em;
+	bottom: 15.5%;
+	padding-bottom: 7.23em;
 	vertical-align: middle;
 
 	/* Safari */
@@ -368,7 +372,7 @@ a {
 
 #diagramFront{
 	top: 20%;
-	left: 210px;
+	left: 240px;
 	width:50%;
 	height: auto;
 	position: fixed;
@@ -377,7 +381,7 @@ a {
 
 #diagramBack{
 	top: 20%;
-	left: 210px;
+	left: 240px;
 	width:50%;
 	height: auto;
 	position: fixed;

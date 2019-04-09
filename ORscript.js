@@ -1,5 +1,9 @@
 var h = window.innerHeight;
 var sectionduration = h/2;
+var s1location = 0;
+var s2location = sectionduration;
+var s3location = sectionduration*2;
+var s4location = sectionduration*3;
 var backDiagramURL;
 
 $(function () { // wait for document ready
@@ -19,6 +23,10 @@ $(function () { // wait for document ready
       backDiagramURL = 'assets/diagrams/OR Platform/entrance.png';
       $("#pl1,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl2").addClass("activeLink")
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location); return false; } );
+      $('#prevSection').css('opacity', '1');
+      $('#nextSection').css('opacity', '1');
 
 
     } else {
@@ -30,6 +38,10 @@ $(function () { // wait for document ready
       backDiagramURL = 'assets/diagrams/OR Platform/fullHighlight.png';
       $("#pl2,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl1").addClass("activeLink")
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+      $('#prevSection').css('opacity', '0.2');
+      $('#nextSection').css('opacity', '1');
 
     }
   }
@@ -44,6 +56,10 @@ $(function () { // wait for document ready
       backDiagramURL = 'assets/diagrams/OR Platform/blueHighlights.png';
       $("#pl1,#pl2,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl3").addClass("activeLink")
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
+      $('#prevSection').css('opacity', '1');
+      $('#nextSection').css('opacity', '1');
     }
   }
 
@@ -57,23 +73,36 @@ $(function () { // wait for document ready
       backDiagramURL = 'assets/diagrams/OR Platform/orangeHighlight.png';
       $("#pl1,#pl2,#pl3").removeClass("activeLink").addClass("progressLink")
       $("#pl4").addClass("activeLink")
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-10); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+      $('#prevSection').css('opacity', '1');
+      $('#nextSection').css('opacity', '0.2');
     }
   }
 
+$('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
+$('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+
+$('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
+$('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+$('#pl3').click( function(e) {e.preventDefault(); controller.scrollTo(s3location); return false; } );
+$('#pl4').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
+
+
   // build scenes
-  new ScrollMagic.Scene({triggerElement: "a#section2", duration: sectionduration, triggerHook: 0})
+  new ScrollMagic.Scene({duration: sectionduration, triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox)
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "a#section3", duration: sectionduration, offset: sectionduration, triggerHook: 0})
+  new ScrollMagic.Scene({duration: sectionduration, offset: sectionduration, triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox2)
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
-  new ScrollMagic.Scene({triggerElement: "a#section4", duration: sectionduration, offset: (sectionduration*2), triggerHook: 0})
+  new ScrollMagic.Scene({duration: sectionduration, offset: (sectionduration*2), triggerHook: 0})
     .setPin("#block")
     .on("enter leave", updateBox3)
     // .addIndicators() // add indicators (requires plugin)

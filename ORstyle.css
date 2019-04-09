@@ -283,6 +283,10 @@ a {
 	z-index: -1
 }
 
+#prevSection{
+	opacity: .2;
+}
+
 .progressLink{
 	width: 1.2em;
 	height: 1.2em;
@@ -304,7 +308,7 @@ a {
 }
 
 .progressCounter{
-	position:fixed;
+	position: absolute;
 	display: inline;
 
 	font-family: 'FoundersGrotesk light';
@@ -314,8 +318,8 @@ a {
 	line-height: 0;
 	white-space: nowrap;
 	float: left;
-	bottom: 10%;
-	padding-bottom: 5em;
+	bottom: 20%;
+	padding-bottom: 7.23em;
 	vertical-align: middle;
 
 	/* Safari */
