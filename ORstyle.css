@@ -19,6 +19,8 @@
 	format('opentype');
 	font-weight: semibold;
 }
+
+@import "@material/elevation/mdc-elevation";
 /* material desing symbols */
 .material-icons {
 	font-family: 'Material Icons';
@@ -82,7 +84,7 @@ ul {
 }
 
 li:hover{
-	opacity: 1;
+	/* opacity: 1; */
 	cursor: pointer;
 }
 
@@ -114,7 +116,8 @@ a {
 	clear: both;
 	margin: 0 0 0 0;
 	background: #FFFFFF;
-	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -132,8 +135,8 @@ a {
 
 
 	margin: 0 0 0 0;
-	padding-left: 7.5%;
-	padding-right: 7.5%;
+	padding-left: 5%;
+	padding-right: 5%;
 	height: 100px;
 }
 
@@ -192,8 +195,8 @@ a {
 	cursor: pointer;
 
 	top: 13%;
-	left: 5%;
-	padding-left: 3%;
+	left: 5.5%;
+	/* padding-left: 3%; */
 }
 
 
@@ -280,11 +283,7 @@ a {
 	-webkit-transition: opacity .2s ease-out;
 	-o-transition: opacity .2s ease-out;
 
-	z-index: -1
-}
-
-#prevSection{
-	opacity: .2;
+	z-index: 1
 }
 
 .progressLink{
@@ -295,6 +294,7 @@ a {
 	background: #333333;
 	margin-bottom: 9.95em;
 	margin-right: .1em;
+	z-index: 1;
 }
 
 .activeLink{
@@ -307,8 +307,12 @@ a {
 	margin-right: .1em;
 }
 
+#prevSection{
+	opacity: .2;
+}
+
 .progressCounter{
-	position: absolute;
+	position:absolute;
 	display: inline;
 
 	font-family: 'FoundersGrotesk light';
@@ -318,9 +322,12 @@ a {
 	line-height: 0;
 	white-space: nowrap;
 	float: left;
-	bottom: 20%;
-	padding-bottom: 7.23em;
+	bottom: -40px;
+	left: -40px;
+	/* padding-bottom: 7.23em; */
 	vertical-align: middle;
+
+	z-index: 2;
 
 	/* Safari */
 	-webkit-transform: rotate(-90deg);
@@ -394,7 +401,7 @@ a {
 @media all and (max-width:480px) {
 	h2 {
 		font-size: 22px;
-		line-height: 18px;}
+		line-height: 22px;}
 
 	h3 {
 		font-size: 12px;}
@@ -436,7 +443,15 @@ a {
 			.progressBarLinks{
 				display: none;
 			}
+
+		.progressCounter{
+			display: none;
 		}
+
+		.navQuote{
+			display: none;
+		}
+
 
 		#enneadLogo{
 			width:80px;
@@ -469,6 +484,11 @@ a {
 				.progressBarLinks{
 					display: none;
 				}
+
+				.progressCounter{
+					display: none;
+				}
+
 				#enneadLogo{
 					width:120px;
 					height:26px;
@@ -520,7 +540,10 @@ a {
 						.progressBarLinks{
 							display: none;
 						}
-					}
+
+						.progressCounter{
+							display: none;
+						}
 
 					.navBar{
 						height: 90px;
@@ -534,6 +557,7 @@ a {
 						width:120px;
 						height:26px;
 					}
+				}
 
 					@media all and (max-width:1200px) and (min-width:769px){
 						h2 {
