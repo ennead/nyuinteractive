@@ -6,6 +6,7 @@ var s3location = sectionduration*2;
 var s4location = sectionduration*3;
 var s5location = sectionduration*4;
 var backDiagramURL;
+var learnMoreLink;
 
 $(function () { // wait for document ready
   // init controller
@@ -68,7 +69,9 @@ $(function () { // wait for document ready
       $("#diagramFront").attr('src', 'assets/diagrams/Section/public_section.png').stop(true,true).hide().fadeIn("slow");
       $("#sectionBody").text("The entry and atrium of the Kimmel Pavilion is connected to the lobby of Tisch hospital by a broad public concourse, lined with patient and staff services and retail amenities. Additional public amenities are found on the seventh floor, including a major roof terrace and garden overlooking the East River.");
       backDiagramURL = 'assets/diagrams/Section/public_section.png';
-      $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
+      learnMoreLink = "publicSpace.html";
+      $("#learnMore").attr('href', learnMoreLink);
+      $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
       $("#pl1,#pl2,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl3").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
