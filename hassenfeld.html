@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Ennead x NYULH - Hassenfeld Children's Hospital
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="shortcut icon" href='assets\logos\favicon.png'>
+
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="hassenfeld.css">
+
+  <!-- material design icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+
+  <script src= 'hassenfeld.js'></script>
+
+  <!-- preload content -->
+  <link rel="preload" href="assets/diagrams/OR Platform/fullHighlight.png" as="image">;
+  <link rel="preload" href="assets/diagrams/OR Platform/entrance.png" as="image">;
+  <link rel="preload" href="assets/diagrams/OR Platform/blueHighlights.png" as="image">;
+  <link rel="preload" href="assets/diagrams/OR Platform/orangeHighlight.png" as="image">;
+
+</head>
+
+<body>
+  <a id="section1"></a>
+  <div id="trigger">
+  <a id="section2"></a>
+  <a id="section3"></a>
+  <a id="section4"></a>
+  <a id="section5"></a>
+</div>
+  <div id="block">
+
+  <div class="navBox">
+
+
+  <ul class="navBar" role="navigation">
+    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\ennead_black.png" alt="Ennead Logo"></a></li>
+    <li>Reinventing the modern urban hospital.</li>
+    <!-- <li class="navActive">Stories</li>
+    <li class="navLink">360° Tour</li>
+    <li class="navLink">Timeline</li>
+    <li class="navLink">Project List <i class="material-icons md-18" style="font-size: 16px">expand_more</i></li> -->
+  </ul>
+
+</div>
+
+  <a href="index.html"><div class="backButton"><h3>Back<img src="assets\icons\black_arrow.png" id="backArrow" alt="back arrow" style="width:75px;height:14px"></h3></div></a>
+
+
+  <ul class="progressBar" role="navigation">
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+  </ul>
+
+  <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 05<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span>
+
+  <ul class="progressBarLinks">
+    <li class="activeLink" id="pl1"><a href=""></a></li>
+    <li class="progressLink" id="pl2"><a href=""></a></li>
+    <li class="progressLink" id="pl3"><a href=""></a></li>
+    <li class="progressLink" id="pl4"><a href=""></a></li>
+    <li class="progressLink" id="pl5"><a href=""></a></li>
+  </ul>
+
+  <div class="scrollingContainer">
+
+    <img id="diagramFront" src="assets\diagrams\Hassenfeld\01.png"><img id="diagramBack" src="assets\diagrams\Hassenfeld\01.png">
+    <div class="scrollingText">
+      <h3 id = 'subtitle'>Hassenfeld's Children's Hospital</h3>
+      <h2 id='title'>Lobby and Arrival</h2>
+      <span id="sectionBody">
+      A 38-foot tall sculpture of a Dalmatian balancing a real taxi on its nose marks the entrance to the Children’s Hospital.
+    </span>
+  </div>
+</div>
+
+</body>
+
+</html>

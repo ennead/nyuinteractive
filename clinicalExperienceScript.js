@@ -46,7 +46,8 @@ $(function () { // wait for document ready
       $("#diagramFront").attr('src', 'assets/diagrams/Section/patientFloors_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("In designing the nursing units, Ennead worked with NYU Langone to reinvent the processes, technology, and experience of care. The resulting patient room and unit, standardized over the eleven floors, serve as the prototype for inpatient care across the health system.");
       backDiagramURL = 'assets/diagrams/Section/patientFloors_section.png';
-      $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
+      $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
+      $("#learnMoreLink").attr('href', 'inpatientUnits.html');
       $("#pl1,#pl3,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl2").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
@@ -107,7 +108,8 @@ $(function () { // wait for document ready
       $("#diagramFront").attr('src', 'assets/diagrams/Section/hch_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Woven through the building is a series of spaces dedicated to children and their families. Dedicated vertical circulation connects the various pediatric spaces and creates a separate and unique experience for children.");
       backDiagramURL = 'assets/diagrams/Section/hch_section.png';
-      $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
+      $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
+      $("#learnMoreLink").attr('href', 'hassenfeld.html');
       $("#pl1,#pl2,#pl3,#pl4").removeClass("activeLink").addClass("progressLink");
       $("#pl5").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
