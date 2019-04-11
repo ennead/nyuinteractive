@@ -198,9 +198,18 @@ a {
 	/* padding-left: 1%; */
 }
 
+.learnMoreActive:hover #forwardArrow{
+	transform: translate3d(12px, 0px, 0px);
+}
 
 .backButton:hover #backArrow{
 	transform: translate3d(-12px, 0px, 0px);
+}
+
+#forwardArrow{
+	/* padding-left: 20px; */
+	transform: translate3d(0px, 0px, 0px);
+	transition: transform .35s ease-in-out;
 }
 
 #backArrow{
@@ -243,6 +252,7 @@ a {
 .progressStep:hover{
 	cursor: pointer;
 }
+
 
 .progressStep::before{
 	content: '';
@@ -290,21 +300,55 @@ a {
 	width: 1.2em;
 	height: 1.2em;
 	border-radius: 2.4em;
-	opacity: 0;
-	background: #333333;
+	opacity: 1;
+	background: rgb(255,255,255, 0);
 	margin-bottom: 7.23em;
 	margin-right: .1em;
-	z-index: 1;
+	z-index: -1;
 }
 
 .activeLink{
 	width: 1.2em;
 	height: 1.2em;
 	border-radius: 2.4em;
-	opacity: .25;
-	background: #333333;
+	opacity: 1;
+	background: rgb(51,51,51, 0.25);
 	margin-bottom: 7.23em;
 	margin-right: .1em;
+}
+
+.tooltip {
+	opacity: 1;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  /* visibility: hidden; */
+  width: 200px;
+
+	font-family: 'FoundersGrotesk Semibold';
+	font-size: 14px;
+	font-weight: normal;
+	color: black;
+	letter-spacing: .03em;
+	line-height: 24px;
+
+  text-align: left;
+  border-radius: 3px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: 150%;
+
+	opacity: 0;
+	-webkit-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+}
+
+.progressLink:hover .tooltiptext {
+  opacity: .6;
 }
 
 #prevSection{
@@ -409,7 +453,7 @@ a {
 @media all and (max-width:480px) {
 	h2 {
 		font-size: 22px;
-		line-height: 18px;}
+		line-height: 22px;}
 
 	h3 {
 		font-size: 12px;}
@@ -426,14 +470,13 @@ a {
 		position: fixed;
 		z-index: -1;}
 
-			#diagramBack{
+	#diagramBack{
 				top: 62%;
 				left: 7.5%;
 				width:82.5%;
 				height: auto;
 				position: fixed;
-				z-index: -2;
-			}
+				z-index: -2;}
 
 			.scrollingText{
 				position:fixed;
@@ -452,13 +495,14 @@ a {
 				display: none;
 			}
 
-			.progressCounter{
-				display: none;
-			}
+		.progressCounter{
+			display: none;
+		}
 
-			.navQuote{
-				display: none;
-			}
+		.navQuote{
+			display: none;
+		}
+
 
 		#enneadLogo{
 			width:80px;
@@ -514,7 +558,7 @@ a {
 						}
 
 						#diagramFront{
-							top: 48%;
+							top: 52%;
 							left: 7.5%;
 							width:82.5%;
 							height: auto;
@@ -523,7 +567,7 @@ a {
 						}
 
 						#diagramBack{
-							top: 48%;
+							top: 52%;
 							left: 7.5%;
 							width:82.5%;
 							height: auto;
@@ -533,7 +577,7 @@ a {
 
 						.scrollingText{
 							position:fixed;
-							top: 18%;
+							top: 22.5%;
 							/* width: 568px; */
 							width: 78%;
 							padding-left: 2.5%;
@@ -546,11 +590,11 @@ a {
 						}
 						.progressBarLinks{
 							display: none;
-					}
+						}
 
-					.progressCounter{
-						display: none;
-					}
+						.progressCounter{
+							display: none;
+						}
 
 					.navBar{
 						height: 90px;
@@ -564,6 +608,7 @@ a {
 						width:120px;
 						height:26px;
 					}
+				}
 
 					@media all and (max-width:1200px) and (min-width:769px){
 						h2 {

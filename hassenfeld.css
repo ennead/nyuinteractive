@@ -408,7 +408,7 @@ a {
 @media all and (max-width:480px) {
 	h2 {
 		font-size: 22px;
-		line-height: 18px;}
+		line-height: 22px;}
 
 	h3 {
 		font-size: 12px;}
@@ -425,14 +425,13 @@ a {
 		position: fixed;
 		z-index: -1;}
 
-			#diagramBack{
+	#diagramBack{
 				top: 62%;
 				left: 7.5%;
 				width:82.5%;
 				height: auto;
 				position: fixed;
-				z-index: -2;
-			}
+				z-index: -2;}
 
 			.scrollingText{
 				position:fixed;
@@ -451,9 +450,14 @@ a {
 				display: none;
 			}
 
-			.progressCounter{
-				display: none;
-			}
+		.progressCounter{
+			display: none;
+		}
+
+		.navQuote{
+			display: none;
+		}
+
 
 		#enneadLogo{
 			width:80px;

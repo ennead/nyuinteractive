@@ -288,6 +288,7 @@ a {
 }
 
 .progressLink{
+	display: inline-block;
 	width: 1.2em;
 	height: 1.2em;
 	border-radius: 2.4em;
@@ -307,6 +308,7 @@ a {
 	margin-bottom: 32.5em;
 	margin-right: .1em;
 }
+
 
 #prevSection{
 	opacity: .2;
