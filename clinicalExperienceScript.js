@@ -41,13 +41,13 @@ $(function () { // wait for document ready
 
     if (e.type == "enter") {
       $("#slideCounter").text("02");
-      $("#title").text("Patient Floor");
+      $("#title").text("Public Space and Amenities");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/Section/patientFloors_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("In designing the nursing units, Ennead worked with NYU Langone to reinvent the processes, technology, and experience of care. The resulting patient room and unit, standardized over the eleven floors, serve as the prototype for inpatient care across the health system.");
-      backDiagramURL = 'assets/diagrams/Section/patientFloors_section.png';
+      $("#diagramFront").attr('src', 'assets/diagrams/Section/public_section.png').stop(true,true).hide().fadeIn("slow");
+      $("#sectionBody").text("The entry and atrium of the Kimmel Pavilion is connected to the lobby of Tisch hospital by a broad public concourse, lined with patient and staff services and retail amenities. Additional public amenities are found on the seventh floor, including a major roof terrace and garden overlooking the East River.");
+      backDiagramURL = 'assets/diagrams/Section/public_section.png';
       $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
-      $("#learnMoreLink").attr('href', 'inpatientUnits.html');
+      $("#learnMoreLink").attr('href', 'publicSpace.html');
       $("#pl1,#pl3,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl2").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
@@ -65,13 +65,13 @@ $(function () { // wait for document ready
   function updateBox2 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("03");
-      $("#title").text("Public Space and Amenities");
+      $("#title").text("OR Platform");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/Section/public_section.png').stop(true,true).hide().fadeIn("slow");
-      $("#sectionBody").text("The entry and atrium of the Kimmel Pavilion is connected to the lobby of Tisch hospital by a broad public concourse, lined with patient and staff services and retail amenities. Additional public amenities are found on the seventh floor, including a major roof terrace and garden overlooking the East River.");
-      backDiagramURL = 'assets/diagrams/Section/public_section.png';
+      $("#diagramFront").attr('src', 'assets/diagrams/Section/or_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#sectionBody").text("The diagnostic and treatment areas of the hospital are integrated and shared between the two bed towers. The Kimmel Pavilion surgical reception areas now serve as the front door for all procedure-based care on the campus.");
+      backDiagramURL = 'assets/diagrams/Section/or_section.png';
       $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
-      $("#learnMoreLink").attr('href', 'publicSpace.html');
+      $("#learnMoreLink").attr('href', 'ORPlatform.html');
       $("#pl1,#pl2,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl3").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
@@ -84,13 +84,13 @@ $(function () { // wait for document ready
   function updateBox3 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("04");
-      $("#title").text("OR Platform");
+      $("#title").text("Inpatient Units");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/Section/or_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("The diagnostic and treatment areas of the hospital are integrated and shared between the two bed towers. The Kimmel Pavilion surgical reception areas now serve as the front door for all procedure-based care on the campus.");
-      backDiagramURL = 'assets/diagrams/Section/or_section.png';
+      $("#diagramFront").attr('src', 'assets/diagrams/Section/patientFloors_section.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#sectionBody").text("In designing the nursing units, Ennead worked with NYU Langone to reinvent the processes, technology, and experience of care. The resulting patient room and unit, standardized over the eleven floors, serve as the prototype for inpatient care across the health system.");
+      backDiagramURL = 'assets/diagrams/Section/patientFloors_section.png';
       $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
-      $("#learnMoreLink").attr('href', 'ORPlatform.html');
+      $("#learnMoreLink").attr('href', 'inpatientUnits.html');
       $("#pl1,#pl2,#pl3,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl4").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );

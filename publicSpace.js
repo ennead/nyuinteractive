@@ -35,7 +35,7 @@ function updateBox0(){
 
     if (e.type == "enter") {
       $("#slideCounter").text("02");
-      $("#title").text("Public Ammenity Floor");
+      $("#title").text("Public Amenity Floor");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Public Space/kimmelFloor7.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Between the podium and the bed tower, the seventh floor houses a public café and conference center, the Child-life space and family resource center for the children’s hospital, and a rooftop terrace and garden.");
