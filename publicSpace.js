@@ -23,8 +23,8 @@ function updateBox0(){
    backDiagramURL = 'assets/diagrams/Public Space/kimmelTischGround.png';
    $("#pl2").removeClass("activeLink").addClass("progressLink")
    $("#pl1").addClass("activeLink")
-   $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-   $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+   $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+   $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
    $('#prevSection').css('opacity', '0.2');
    $('#nextSection').css('opacity', '1');
 }
@@ -42,8 +42,8 @@ function updateBox0(){
       backDiagramURL = 'assets/diagrams/Public Space/kimmelFloor7.png';
       $("#pl1").removeClass("activeLink").addClass("progressLink")
       $("#pl2").addClass("activeLink")
-      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location); return false; } );
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '0.2');
     }
@@ -53,11 +53,11 @@ function updateBox0(){
   }
   }
 
-$('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-$('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+$('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+$('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
 
-$('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-$('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+$('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+$('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
 
 
   // build scenes

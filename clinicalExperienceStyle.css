@@ -48,7 +48,7 @@
 h2{
 	font-family: 'FoundersGrotesk Semibold';
 	font-size: 42px;
-	font-weight: Semibold;
+	font-weight: normal;
 	color: #333333;
 	letter-spacing: 0px;
 	line-height: 40px;
@@ -57,6 +57,7 @@ h2{
 h3{
 	font-family: 'FoundersGrotesk Semibold';
 	font-size: 14px;
+	font-weight: normal;
 	color: #333333;
 	letter-spacing: .03em;
 	line-height: 0;
@@ -452,6 +453,10 @@ a {
 			}
 
 			.progressCounter{
+				display: none;
+			}
+
+			.navQuote{
 				display: none;
 			}
 

@@ -25,8 +25,8 @@ function updateBox0(){
    backDiagramURL = 'assets/diagrams/OR Platform/fullHighlight.png';
    $("#pl2,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
    $("#pl1").addClass("activeLink")
-   $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-   $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+   $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+   $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
    $('#prevSection').css('opacity', '0.2');
    $('#nextSection').css('opacity', '1');
 }
@@ -44,8 +44,8 @@ function updateBox0(){
       backDiagramURL = 'assets/diagrams/OR Platform/entrance.png';
       $("#pl1,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl2").addClass("activeLink")
-      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location); return false; } );
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '1');
     }
@@ -66,8 +66,8 @@ function updateBox0(){
       backDiagramURL = 'assets/diagrams/OR Platform/blueHighlights.png';
       $("#pl1,#pl2,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl3").addClass("activeLink")
-      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '1');
     }
@@ -84,19 +84,19 @@ function updateBox0(){
       $("#pl1,#pl2,#pl3").removeClass("activeLink").addClass("progressLink")
       $("#pl4").addClass("activeLink")
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-10); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '0.2');
     }
   }
 
-$('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-$('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+$('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+$('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
 
-$('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-$('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+$('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+$('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
 $('#pl3').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
-$('#pl4').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
+$('#pl4').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
 
 
   // build scenes

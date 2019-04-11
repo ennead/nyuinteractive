@@ -27,8 +27,8 @@ $(function () { // wait for document ready
     $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
     $("#pl2,#pl3,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
     $("#pl1").addClass("activeLink");
-    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-    $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+    $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
     $('#prevSection').css('opacity', '0.2');
     $('#nextSection').css('opacity', '1');
 
@@ -49,8 +49,8 @@ $(function () { // wait for document ready
       $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
       $("#pl1,#pl3,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl2").addClass("activeLink");
-      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location); return false; } );
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '1');
     }
@@ -69,13 +69,12 @@ $(function () { // wait for document ready
       $("#diagramFront").attr('src', 'assets/diagrams/Section/public_section.png').stop(true,true).hide().fadeIn("slow");
       $("#sectionBody").text("The entry and atrium of the Kimmel Pavilion is connected to the lobby of Tisch hospital by a broad public concourse, lined with patient and staff services and retail amenities. Additional public amenities are found on the seventh floor, including a major roof terrace and garden overlooking the East River.");
       backDiagramURL = 'assets/diagrams/Section/public_section.png';
-      learnMoreLink = "publicSpace.html";
-      $("#learnMore").attr('href', learnMoreLink);
       $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
+      $("#learnMoreLink").attr('href', 'publicSpace.html');
       $("#pl1,#pl2,#pl4,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl3").addClass("activeLink");
-      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '1');
     }
@@ -90,10 +89,11 @@ $(function () { // wait for document ready
       $("#sectionBody").text("The diagnostic and treatment areas of the hospital are integrated and shared between the two bed towers. The Kimmel Pavilion surgical reception areas now serve as the front door for all procedure-based care on the campus.");
       backDiagramURL = 'assets/diagrams/Section/or_section.png';
       $("#learnMore").removeClass("learnMoreHidden").addClass("learnMoreActive");
+      $("#learnMoreLink").attr('href', 'ORPlatform.html');
       $("#pl1,#pl2,#pl3,#pl5").removeClass("activeLink").addClass("progressLink");
       $("#pl4").addClass("activeLink");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s5location); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s5location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '1');
     }
@@ -110,21 +110,21 @@ $(function () { // wait for document ready
       $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
       $("#pl1,#pl2,#pl3,#pl4").removeClass("activeLink").addClass("progressLink");
       $("#pl5").addClass("activeLink");
-      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s5location); return false; } );
+      $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s5location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '0.2');
     }
   }
 
-  $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-  $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+  $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+  $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
 
-  $('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
-  $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location); return false; } );
+  $('#pl1').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+  $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
   $('#pl3').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
-  $('#pl4').click( function(e) {e.preventDefault(); controller.scrollTo(s4location); return false; } );
-  $('#pl5').click( function(e) {e.preventDefault(); controller.scrollTo(s5location); return false; } );
+  $('#pl4').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
+  $('#pl5').click( function(e) {e.preventDefault(); controller.scrollTo(s5location-1); return false; } );
 
   // build scenes
   new ScrollMagic.Scene({duration: sectionduration, triggerHook: 0})
