@@ -422,6 +422,26 @@ a {
 	z-index: -2;
 }
 
+.hotspotContainer {
+	top: 20%;
+	left: 200px;
+	position: fixed;
+	z-index: 1;
+}
+
+.box {
+  width:6%;
+  height:6%;
+  position: absolute;
+
+	z-index: 5;
+}
+
+#hotspot01 {
+  top:50%;
+  left:36%;
+}
+
 
 .scrollingText{
 	position: fixed;
@@ -632,6 +652,13 @@ a {
 									z-index: -2;
 								}
 
+								.hotspotContainer {
+									top: 30%;
+									left: 120px;
+									position: fixed;
+									z-index: 1;
+								}
+
 								.scrollingText{
 									position: fixed;
 									top: 27%;
@@ -675,6 +702,13 @@ a {
 											height: auto;
 											position: fixed;
 											z-index: -2;
+										}
+
+										.hotspotContainer {
+											top: 30%;
+											left: 150px;
+											position: fixed;
+											z-index: 1;
 										}
 
 										#enneadLogo{

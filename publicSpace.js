@@ -12,6 +12,14 @@ $(function () { // wait for document ready
 
   $(".scrollingText").stop(true,true).hide().slideDown("slow");
 
+  var diagramFrontWidth = $("#diagramFront").width()
+  var diagramFrontHeight = $("#diagramFront").height();
+  console.log(diagramFrontWidth, diagramFrontHeight);
+  $("hotspotContainer").width(diagramFrontWidth);
+  $("hotspotContainer").height(diagramFrontHeight);
+
+
+
   // show pin state
 
 function updateBox0(){
@@ -67,4 +75,15 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
+});
+
+$( window ).resize(function() {
+  diagramFrontWidth = $("#diagramFront").width()
+  diagramFrontHeight = $("#diagramFront").height();
+  console.log("diagram: ",diagramFrontWidth, diagramFrontHeight);
+  $("hotspotContainer").width(diagramFrontWidth);
+  $("hotspotContainer").height(diagramFrontHeight);
+  hpWidth = $("#hotspotContainer").width();
+  hpHeight = $("#hotspotContainer").height();
+  console.log("hotspots: ",hpWidth, hpHeight);
 });
