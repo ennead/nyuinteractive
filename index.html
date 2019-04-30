@@ -6,20 +6,43 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="shortcut icon" href='favicon.png'>
+
 </head>
 
 <style>
 
-body {
+@font-face {
+	font-family: 'FoundersGrotesk Light';
+	src: url('e75d35a694bfa07ad3d3f9f861a4a83530ecdbf5/fonts/FoundersGrotesk-Light.otf');
+	src:
+	local('FoundersGrotesk Light'),
+	local('FoundersGrotesk-Light'),
+	url('fonts/FoundersGrotesk-Light.otf')
+	format('opentype');
+	font-weight: light;
+}
 
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
+@font-face {
+	font-family: 'FoundersGrotesk Semibold';
+	src: url('e75d35a694bfa07ad3d3f9f861a4a83530ecdbf5/fonts/FoundersGrotesk-Semibold.otf');
+	src:
+	local('FoundersGrotesk Semibold'),
+	local('FoundersGrotesk-Semibold'),
+	url('fonts/FoundersGrotesk-Semibold.otf')
+	format('opentype');
+	font-weight: semibold;
+}
+
+body {
+	background-color: #EBEBEB;
+	font-family: 'FoundersGrotesk Light';
+	font-size: 12px;
 }
 
 .box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	/* border-radius: 3px; */
+	/* background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px; */
 }
 
 .lightbox {
@@ -29,7 +52,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
+	background: #EBEBEB;
 	text-align: center;
 	margin: auto;
 
@@ -49,19 +72,50 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
+   color: #AFAFAF;
    text-align: center;
+	 font-family: 'FoundersGrotesk Light';
+	 font-size: 12px;
 }
 
 ::-moz-placeholder {
-   color: #955;
+   color: #AFAFAF;
    text-align: center;
+	 font-family: 'FoundersGrotesk Light';
+	 font-size: 12px;
 }
 
 :-ms-input-placeholder {
-   color: #955;
+   color: #AFAFAF;
    text-align: center;
+	 font-family: 'FoundersGrotesk Light';
+	 font-size: 12px;
 }
+
+#password{
+padding: 8px 8px;
+margin: 8px 0;
+border: .5px;
+border-radius: 4px;
+outline: none;
+}
+
+#password:focus {
+	border: .5px solid #333333;
+-webkit-transition: 0.5s;
+transition: 0.5s;
+outline: none;
+}
+
+#loginbutton{
+	padding: 6px 10px;
+	/* margin: 8px 0; */
+	border: 0px;
+	border-radius: 4px;
+	background-color: #333333;
+}
+
+
 
 </style>
 
@@ -71,8 +125,9 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
+					<div id="enneadLogo"><img src='enneadNYULH_logo.png' style="width:122px;height:18.5px"></img></div>
 					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
+					<button id="loginbutton" type="button"><img src="forward_arrow.png" style="width:17px;height:8px"></img></button>
 					<p id="wrongPassword" style="display: none">wrong password</p>
 				</div>
 			</div>
