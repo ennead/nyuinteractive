@@ -1,100 +1,134 @@
+
 <!DOCTYPE html>
-<html>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <title>
-    Ennead x NYULH - Designing the Patient-Care Experience
-  </title>
+<title></title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <link rel="shortcut icon" href='assets\logos\favicon.png'>
-
-  <!-- style -->
-  <link rel="stylesheet" type="text/css" href="clinicalExperienceStyle.css">
-
-  <!-- material design icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
-
-
-  <!-- scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
-
-  <script src= 'clinicalExperienceScript.js'></script>
-
-  <!-- preload content -->
-  <link rel="preload" href="assets/diagrams/OR Platform/fullHighlight.png" as="image">;
-  <link rel="preload" href="assets/diagrams/OR Platform/entrance.png" as="image">;
-  <link rel="preload" href="assets/diagrams/OR Platform/blueHighlights.png" as="image">;
-  <link rel="preload" href="assets/diagrams/OR Platform/orangeHighlight.png" as="image">;
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
+<style>
+
+body {
+
+	background-image: url('grunge_patterns.jpg');
+	background-attachment: fixed;
+	color: #333;
+}
+
+.box {
+	border-radius: 3px;
+	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+}
+
+.lightbox {
+	zoom: 1.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(10, 10, 10, 0.8);
+	text-align: center;
+	margin: auto;
+
+}
+
+div.horizontal {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+div.vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+::-moz-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   color: #955;
+   text-align: center;
+}
+
+</style>
+
 <body>
-  <a id="section1"></a>
-  <div id="trigger">
-  <a id="section2"></a>
-  <a id="section3"></a>
-  <a id="section4"></a>
-  <a id="section5"></a>
-</div>
-  <div id="block">
 
-  <div class="navBox">
-
-
-  <ul class="navBar" role="navigation">
-    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\ennead_black.png" alt="Ennead Logo"></a></li>
-    <li class="navQuote">Reinventing the modern urban hospital.</li>
-    <!-- <li class="navActive">Stories</li>
-    <li class="navLink">360° Tour</li>
-    <li class="navLink">Timeline</li>
-    <li class="navLink">Project List <i class="material-icons md-18" style="font-size: 16px">expand_more</i></li> -->
-  </ul>
-
-</div>
-
-  <!-- <div class="backButton"><h3>Back<img src="assets\icons\black_arrow.png" id="backArrow" alt="back arrow" style="width:75px;height:14px"></h3></div> -->
+	<div id="loginbox" class="lightbox" >
+		<div class="horizontal">
+			<div class="vertical">
+				<div class="box">
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-  <ul class="progressBar" role="navigation">
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-  </ul>
 
-  <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 05<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
-  <ul class="progressBarLinks">
-    <div class="tooltip"><li class="activeLink" id="pl1"><a href=""><span class="tooltiptext">Overview</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl2"><a href=""><span class="tooltiptext">Public Space and Amenities</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl3"><a href=""><span class="tooltiptext">OR and Procedure Platform</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl4"><a href=""><span class="tooltiptext">Inpatient Units</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl5"><a href=""><span class="tooltiptext">Hassenfeld Children's Hospital</span></a></li></div>
-  </ul>
 
-  <div class="scrollingContainer">
+	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
 
-    <img id="diagramFront" src="assets/diagrams/Section/fullsection.png"><img id="diagramBack" src="assets/diagrams/Section/fullsection.png">
-    <div class="scrollingText">
-      <h3 id = 'subtitle'>Designing the Patient-Care Experience</h3>
-      <h2 id='title'>Overview</h2>
-      <span id="sectionBody">
-      The Helen L. and Martin H. Kimmel Pavilion is an 830,000-sf new inpatient tower, focused on the highest acuity patients and the most technological advanced care.  The new tower is integrated with the mid-century Tisch Hospital building--the combined facility is designed to function as a single inpatient environment of 550 all-private patient rooms.
-    </span><br><br>
-    <a href="ORPlatform.html" id="learnMoreLink"><div id="learnMore" class="learnMoreHidden"><h3>Learn More  <img src="assets\icons\forward_arrow.png" id="forwardArrow" alt="forward arrow" style="width:75px;height:14px"></h3></div></a>
-    </div>
-  </div>
-</div>
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
 
 </body>
-
 </html>
