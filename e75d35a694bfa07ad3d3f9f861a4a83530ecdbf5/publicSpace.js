@@ -3,6 +3,7 @@ var sectionduration = h/2;
 var s1location = 0;
 var s2location = sectionduration;
 var backDiagramURL;
+var hotspotActive = false;
 
 
 $(function () { // wait for document ready
@@ -77,6 +78,20 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
 
 });
 
+function visibilityHotspotBox() {
+  console.log(hotspotActive);
+  if (hotspotActive==true){
+    $('.hotspotWindow').css('visibility', 'hidden');
+    hotspotActive= false;
+    console.log('going to the wrong one');
+  }
+  else{
+    $('.hotspotWindow').css("visibility", "visible");
+    hotspotActive= true;
+    console.log('here?');
+  }
+}
+
 $( window ).resize(function() {
   diagramFrontWidth = $("#diagramFront").width()
   diagramFrontHeight = $("#diagramFront").height();
@@ -86,4 +101,10 @@ $( window ).resize(function() {
   hpWidth = $("#hotspotContainer").width();
   hpHeight = $("#hotspotContainer").height();
   console.log("hotspots: ",hpWidth, hpHeight);
+});
+
+$( document ).ready(function() {
+
+  $('#hotspot01').click(visibilityHotspotBox);
+
 });

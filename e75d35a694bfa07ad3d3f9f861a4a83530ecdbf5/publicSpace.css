@@ -433,6 +433,7 @@ a {
   width:6%;
   height:6%;
   position: absolute;
+	cursor: pointer;
 
 	z-index: 5;
 }
@@ -448,6 +449,22 @@ a {
 	top: 30%;
 	width: 22.5%;
 	right: 100px;
+}
+
+.hotspotWindow{
+	position: fixed;
+	top: 30%;
+	width: 22.5%;
+	right: 100px;
+	padding: 50px 30px;
+	background-color: white;
+	z-index: 2;
+	visibility: hidden;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hotspotPhoto{
+	/* width: inherit; */
 }
 
 ::-webkit-scrollbar {
