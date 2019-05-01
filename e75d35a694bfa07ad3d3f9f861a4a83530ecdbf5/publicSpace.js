@@ -24,6 +24,9 @@ $(function () { // wait for document ready
   // show pin state
 
 function updateBox0(){
+
+  closeHotspot();
+
    $("#slideCounter").text("01");
    $("#title").text("Ground Floor");
    $("#diagramBack").attr('src', backDiagramURL);
@@ -41,6 +44,7 @@ function updateBox0(){
   function updateBox1 (e) {
 
     scrollPos = controller.scrollPos();
+    closeHotspot();
 
     if (e.type == "enter") {
       $("#slideCounter").text("02");
@@ -59,6 +63,7 @@ function updateBox0(){
 
   else if (scrollPos<1) {
     updateBox0 ();
+    closeHotspot();
   }
   }
 
@@ -78,19 +83,31 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
 
 });
 
-function visibilityHotspotBox() {
-  console.log(hotspotActive);
-  if (hotspotActive==true){
-    $('.hotspotWindow').css('visibility', 'hidden');
-    hotspotActive= false;
-    console.log('going to the wrong one');
-  }
-  else{
-    $('.hotspotWindow').css("visibility", "visible");
-    hotspotActive= true;
-    console.log('here?');
-  }
+// function visibilityHotspotBox() {
+//   console.log(hotspotActive);
+//   if (hotspotActive==true){
+//     $('#hotspotWindow').css('visibility', 'hidden');
+//     hotspotActive= false;
+//     console.log('going to the wrong one');
+//   }
+//   else{
+//     $('#hotspotWindow').css("visibility", "visible");
+//     hotspotActive= true;
+//     console.log('here?');
+//   }
+// }
+
+function openHotspot() {
+  $('#hotspotWindow').css("visibility", "visible");
+  hotspotActive= true;
 }
+
+function closeHotspot() {
+  $('#hotspotWindow').css('visibility', 'hidden');
+  hotspotActive= false;
+}
+
+
 
 $( window ).resize(function() {
   diagramFrontWidth = $("#diagramFront").width()
@@ -105,6 +122,8 @@ $( window ).resize(function() {
 
 $( document ).ready(function() {
 
-  $('#hotspot01').click(visibilityHotspotBox);
+  $('#hotspot01').click(openHotspot);
+  $('#hotspotClose').click(closeHotspot);
+
 
 });

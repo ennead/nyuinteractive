@@ -68,7 +68,7 @@
   <div class="scrollingContainer">
     <div id="hotspotContainer">
           <img id="diagramFront" src="assets\diagrams\Public Space\kimmelTischGround.png"><img id="diagramBack" src="assets\diagrams\Public Space\kimmelTischGround.png">
-          <div id="hotspot01" class="box"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
+          <div id="hotspot01" class="box clickable" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
           </div>
     </div>
 
@@ -81,13 +81,16 @@
     </span>
     </div>
 
-    <div class="hotspotWindow">
-      <h3>Ground Floor</h3>
-      <h2 id='hotspotTitle'>Kimmel Lobby</h2>
+    <div id="hotspotWindow">
+      <div class="windowNav"><h3>Ground Floor</h3><i class="material-icons md-18 clickable" id="hotspotClose">close</i></div>
+      <h2 id='hotspotTitle'>Kimmel Atrium</h2>
       <span id="hotspotBody">
-      The patient-care concourse connects the lobbies of the two inpatient towers. A coffee bar, retail pharmacy, giftshop, and cafeteria are all located along the concourse.
+      The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.
     </span>
-    <div class="hotspotPhoto"><img src="assets\photos\kimmelAtrium.png" style="width: inherit;"></div>
+    <br>
+    <img src="assets\photos\kimmelAtrium01.png" style="padding-top: 50px; padding-bottom:0px;" id="hotspotPhoto">
+    <div class="windowNav"><span style="font-family: 'FoundersGrotesk light';font-size: 14px;color: #333333;letter-spacing: .03em;line-height: 4px;"><span style="font-family:FoundersGrotesk Semibold">
+    01</span> / 03</span><span style="line-height: 0"><i class="material-icons md-18 clickable" style="line-height: 0;" id="prevPhoto">chevron_left</i> <i class="material-icons md-18 clickable" style="line-height: 0;" id="nextPhoto">chevron_right</i></span></div>
     </div>
 
   </div>
