@@ -83,20 +83,6 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
 
 });
 
-// function visibilityHotspotBox() {
-//   console.log(hotspotActive);
-//   if (hotspotActive==true){
-//     $('#hotspotWindow').css('visibility', 'hidden');
-//     hotspotActive= false;
-//     console.log('going to the wrong one');
-//   }
-//   else{
-//     $('#hotspotWindow').css("visibility", "visible");
-//     hotspotActive= true;
-//     console.log('here?');
-//   }
-// }
-
 function openHotspot() {
   $('#hotspotWindow').css("visibility", "visible");
   hotspotActive= true;
@@ -105,6 +91,13 @@ function openHotspot() {
 function closeHotspot() {
   $('#hotspotWindow').css('visibility', 'hidden');
   hotspotActive= false;
+}
+
+function updateImageCount() {
+  var totalItems = $('.carousel-item').length;
+  var currentIndex = $('div.active').index() + 1;
+  $("#imageIndex").text("0"+currentIndex);
+  console.log(currentIndex);
 }
 
 
@@ -121,9 +114,7 @@ $( window ).resize(function() {
 });
 
 $( document ).ready(function() {
-
   $('#hotspot01').click(openHotspot);
   $('#hotspotClose').click(closeHotspot);
-
-
+  $(".windowNav").click(updateImageCount);
 });
