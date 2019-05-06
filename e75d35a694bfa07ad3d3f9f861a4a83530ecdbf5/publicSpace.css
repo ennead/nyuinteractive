@@ -439,6 +439,8 @@ a {
 
 .clickable{
 	cursor: pointer;
+	padding: 5px;
+	margin: -5px;
 }
 
 #hotspot01 {
@@ -480,6 +482,7 @@ a {
 .windowNav {
   display: flex;
   justify-content: space-between;
+	z-index: 5;
 }
 
 ::-webkit-scrollbar {

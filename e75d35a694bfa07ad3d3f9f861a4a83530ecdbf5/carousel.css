@@ -174,23 +174,11 @@
   }
 }
 
+.fade {
+  opacity: 0;
+  @include transition($transition-fade);
 
-// Optional captions
-//
-//
-
-.carousel-caption {
-  position: absolute;
-  right: ((100% - $carousel-caption-width) / 2);
-  bottom: 20px;
-  left: ((100% - $carousel-caption-width) / 2);
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $carousel-caption-color;
-  text-align: center;
-}
-
-.carousel-inner > .item {
-transform: translate3d(0,0,0) !important;
+  &.show {
+    opacity: 1;
+  }
 }

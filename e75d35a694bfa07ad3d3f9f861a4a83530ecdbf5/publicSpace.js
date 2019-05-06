@@ -5,6 +5,9 @@ var s2location = sectionduration;
 var backDiagramURL;
 var hotspotActive = false;
 
+var totalItems = $('.carousel-item').length;
+var currentIndex = $('div.active').index()+1;
+
 
 $(function () { // wait for document ready
   // init controller
@@ -18,8 +21,7 @@ $(function () { // wait for document ready
   console.log(diagramFrontWidth, diagramFrontHeight);
   $("hotspotContainer").width(diagramFrontWidth);
   $("hotspotContainer").height(diagramFrontHeight);
-
-
+  $("#carousel").carousel();
 
   // show pin state
 
@@ -86,21 +88,21 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
 function openHotspot() {
   $('#hotspotWindow').css("visibility", "visible");
   hotspotActive= true;
+  updateImageCount()
 }
 
 function closeHotspot() {
   $('#hotspotWindow').css('visibility', 'hidden');
   hotspotActive= false;
+  updateImageCount()
 }
 
 function updateImageCount() {
-  var totalItems = $('.carousel-item').length;
-  var currentIndex = $('div.active').index() + 1;
+  var currentIndex = $('div.active').index()+1;
+
   $("#imageIndex").text("0"+currentIndex);
   console.log(currentIndex);
 }
-
-
 
 $( window ).resize(function() {
   diagramFrontWidth = $("#diagramFront").width()
@@ -116,5 +118,7 @@ $( window ).resize(function() {
 $( document ).ready(function() {
   $('#hotspot01').click(openHotspot);
   $('#hotspotClose').click(closeHotspot);
-  $(".windowNav").click(updateImageCount);
+  // $(".windowNav").click(updateImageCount);
+  $('#imageCarousel').on('slid.bs.carousel', function (e) {
+    updateImageCount()})
 });
