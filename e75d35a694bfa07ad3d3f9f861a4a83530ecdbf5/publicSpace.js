@@ -41,6 +41,8 @@ function updateBox0(){
    $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
    $('#prevSection').css('opacity', '0.2');
    $('#nextSection').css('opacity', '1');
+   $('.box0').css('visibility', 'visible');
+   $('.box1').css('visibility', 'hidden');
 }
 
   function updateBox1 (e) {
@@ -61,6 +63,8 @@ function updateBox0(){
       $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '0.2');
+      $('.box0').css('visibility', 'hidden');
+      $('.box1').css('visibility', 'visible');
     }
 
   else if (scrollPos<1) {
@@ -88,6 +92,7 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
 function openHotspot() {
   $('#hotspotWindow').css("visibility", "visible");
   hotspotActive= true;
+  $("#imageCarousel").carousel(0);
   updateImageCount()
 }
 
@@ -97,10 +102,32 @@ function closeHotspot() {
   updateImageCount()
 }
 
+function hpcontent1() {
+  $("#hotspotTitle").text("Kimmel Atrium");
+  $("#hotspotBody").text("The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.");
+}
+
+function hpcontent2() {
+  $("#hotspotTitle").text("Tisch Dining Hall");
+  $("#hotspotBody").text("The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.");
+}
+
+function hpcontent3() {
+  $("#hotspotTitle").text("Pharmacy");
+  $("#hotspotBody").text("Something about the pharmacy, make it long enough.");
+}
+
+function hpcontent4() {
+  $("#hotspotTitle").text("Courtyard");
+  $("#hotspotBody").text("The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.");
+}
+
 function updateImageCount() {
+  var totalItems = $('.carousel-item').length;
   var currentIndex = $('div.active').index()+1;
 
   $("#imageIndex").text("0"+currentIndex);
+  $("#imageCount").text("0"+totalItems);
   console.log(currentIndex);
 }
 
@@ -116,9 +143,13 @@ $( window ).resize(function() {
 });
 
 $( document ).ready(function() {
-  $('#hotspot01').click(openHotspot);
+  $('.box').click(openHotspot);
+  $('#hotspot01').click(hpcontent1);
+  $('#hotspot02').click(hpcontent2);
+  $('#hotspot03').click(hpcontent3);
+  $('#hotspot04').click(hpcontent4);
+
   $('#hotspotClose').click(closeHotspot);
-  // $(".windowNav").click(updateImageCount);
   $('#imageCarousel').on('slid.bs.carousel', function (e) {
     updateImageCount()})
 });

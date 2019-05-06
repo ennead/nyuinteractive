@@ -104,7 +104,7 @@ a {
 }
 
 .spacer{
-	height: 3000px;
+	height: 500px;
 }
 
 .navBox{
@@ -212,10 +212,11 @@ a {
 }
 
 .progressBar{
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	position: fixed;
 	align-items: center;
+	height: auto;
 
 	margin: 0;
 	top: 25%;
@@ -228,6 +229,7 @@ a {
 	-o-transition: opacity .2s ease-out;
 }
 
+
 .progressBar:hover{
 	opacity: 1;
 }
@@ -235,14 +237,19 @@ a {
 .progressStep{
 	width: .38em;
 	height: .38em;
-	border-radius: .76em;
+	border-radius: 50%;
 	background: #333333;
 	margin-bottom: 33.5em;
 	margin-left: .1em;
+
+	/* border: 8px solid;
+	border-color: rgba(51,51,51, 0) */
 }
 
 .progressStep:hover{
 	cursor: pointer;
+	/* border: 8px solid; */
+	/* border-color: rgba(51,51,51, 0.25) */
 }
 
 .progressStep::before{
@@ -263,7 +270,7 @@ a {
 .progressActive{
 	width: .6em;
 	height: .6em;
-	border-radius: 1.2em;
+	border-radius: 50%;
 	background: #333333;
 	margin-bottom: 9em;
 	opacity: .5;
@@ -290,7 +297,7 @@ a {
 .progressLink{
 	width: 1.2em;
 	height: 1.2em;
-	border-radius: 2.4em;
+	border-radius: 50%;
 	opacity: 1;
 	background: rgb(51,51,51, 0);
 	margin-bottom: 32.5em;
@@ -301,7 +308,7 @@ a {
 .activeLink{
 	width: 1.2em;
 	height: 1.2em;
-	border-radius: 2.4em;
+	border-radius: 50%;
 	opacity: 1;
 	background: rgb(51,51,51, 0.25);
 	margin-bottom: 32.5em;
@@ -358,12 +365,10 @@ a {
 	line-height: 0;
 	white-space: nowrap;
 	float: left;
-	bottom: -80px;
+	top: 40em;
 	left: -40px;
 	/* padding-bottom: 7.23em; */
 	vertical-align: middle;
-
-	z-index: 2;
 
 	/* Safari */
 	-webkit-transform: rotate(-90deg);
@@ -375,6 +380,10 @@ a {
 	-o-transform: rotate(-90deg);
 }
 
+#high-z{
+	z-index: 5;
+}
+
 
 .material-icons{
 	vertical-align: middle;
@@ -382,11 +391,10 @@ a {
 	padding-bottom: 2px;
 }
 
-.scrollingContainer{
+/* .scrollingContainer{
 	display: flex;
 	flex-wrap: wrap;
 	height: 60vh;
-	/* min-width: 260px;*/
 	margin-top: 7%;
 	margin-left: 0;
 	padding-bottom: auto;
@@ -394,22 +402,29 @@ a {
 	padding-right: 3%;
 	text-align: left;
 	align-items: center;
-}
 
-.scrollingDiagram{
-	top: 30%;
-	left: 100px;
+	border: 1px solid red;
+} */
+
+.scrollingContainer{
+	display: inline-block;
 	position: fixed;
-	/* flex: 5; */
-	/* align-items: left; */
-}
-
-#diagramFront{
 	top: 20%;
 	left: 200px;
 	width:55%;
-	height: auto;
-	position: fixed;
+}
+
+.scrollingContainer img{
+	display: block;
+	/* position: absolute; */
+	max-width: 100%;
+	/* top: 0px; */
+	/* left: 0px; */
+}
+
+#diagramFront{
+	top:0px;
+	left:0px;
 	z-index: -1;
 }
 
@@ -419,8 +434,26 @@ a {
 	width:55%;
 	height: auto;
 	position: fixed;
-	z-index: -2;
+	z-index: -2;}
+
+/* #diagramFront{
+	top: 20%;
+	left: 200px;
+	width:55%;
+	height: auto;
+	position: fixed;
+	z-index: -1;
+	border: 1px solid blue;
 }
+
+#diagramBack{
+	top: 20%;
+	left: 200px;
+	width:55%;
+	height: auto;
+	position: fixed;
+	z-index: -2;
+} */
 
 .hotspotContainer {
 	top: 20%;
@@ -430,8 +463,8 @@ a {
 }
 
 .box {
-  width:6%;
-  height:6%;
+  width:8%;
+  height:8%;
   position: absolute;
 
 	z-index: 5;
@@ -444,10 +477,24 @@ a {
 }
 
 #hotspot01 {
-  top:95%;
-  left:23%;
+  top:70%;
+  left:28%;
 }
 
+#hotspot02 {
+  top:45%;
+  left:63.5%;
+}
+
+#hotspot03 {
+  top:45%;
+  left:45%;
+}
+
+#hotspot04 {
+  top:15%;
+  left:69%;
+}
 
 .scrollingText{
 	position: fixed;
@@ -489,7 +536,7 @@ a {
 	display: none;
 }
 
-@media all and (max-width:480px) {
+/* @media all and (max-width:480px) {
 	h2 {
 		font-size: 22px;
 		line-height: 22px;}
@@ -521,7 +568,6 @@ a {
 			.scrollingText{
 				position:fixed;
 				top: 22.5%;
-				/* width: 568px; */
 				width: 78%;
 				padding-left: 2.5%;
 				padding-right: 2.5%;
@@ -618,7 +664,6 @@ a {
 						.scrollingText{
 							position:fixed;
 							top: 22.5%;
-							/* width: 568px; */
 							width: 78%;
 							padding-left: 2.5%;
 							padding-right: 2.5%;
@@ -750,4 +795,4 @@ a {
 											width:120px;
 											height:26px;
 										}
-									}
+									} */
