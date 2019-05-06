@@ -114,7 +114,7 @@ function hpcontent2() {
 
 function hpcontent3() {
   $("#hotspotTitle").text("Pharmacy");
-  $("#hotspotBody").text("Something about the pharmacy, make it long enough.");
+  $("#hotspotBody").text("Something about the pharmacy, make it long enough. Something about the pharmacy, make it long enough. Something about the pharmacy, make it long enough.");
 }
 
 function hpcontent4() {

@@ -348,6 +348,45 @@ a {
 .progressLink:hover .tooltiptext {
   opacity: .6;
 }
+.activeLink:hover .tooltiptext {
+  opacity: .6;
+}
+
+.hptooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.hptooltip .hptooltiptext {
+  /* visibility: hidden; */
+  width: 100%;
+
+	font-family: 'FoundersGrotesk Semibold';
+	font-size: 10px;
+	font-weight: normal;
+	color: white;
+	letter-spacing: .03em;
+	line-height: 18px;
+	background-color: #333333;
+
+  text-align: center;
+  border-radius: 3px;
+  padding: 2px 0px;
+	padding-top: 4px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 0%;
+
+	opacity: 0;
+	-webkit-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+}
+
+
+.box:hover .hptooltiptext {
+  opacity: .8;
+}
 
 
 #prevSection{
@@ -390,21 +429,6 @@ a {
 	font-size: 2px;
 	padding-bottom: 2px;
 }
-
-/* .scrollingContainer{
-	display: flex;
-	flex-wrap: wrap;
-	height: 60vh;
-	margin-top: 7%;
-	margin-left: 0;
-	padding-bottom: auto;
-	padding-left: 0;
-	padding-right: 3%;
-	text-align: left;
-	align-items: center;
-
-	border: 1px solid red;
-} */
 
 .scrollingContainer{
 	display: inline-block;
@@ -467,7 +491,7 @@ a {
   height:8%;
   position: absolute;
 
-	z-index: 5;
+	z-index: 1;
 }
 
 .clickable{
@@ -536,7 +560,7 @@ a {
 	display: none;
 }
 
-/* @media all and (max-width:480px) {
+@media all and (max-width:480px) {
 	h2 {
 		font-size: 22px;
 		line-height: 22px;}
@@ -795,4 +819,4 @@ a {
 											width:120px;
 											height:26px;
 										}
-									} */
+									}
