@@ -1,5 +1,5 @@
 var h = window.innerHeight;
-var sectionduration = h/2;
+var sectionduration = (h/3)*2;
 var s1location = 0;
 var s2location = sectionduration;
 var backDiagramURL;
@@ -105,21 +105,55 @@ function closeHotspot() {
 function hpcontent1() {
   $("#hotspotTitle").text("Kimmel Atrium");
   $("#hotspotBody").text("The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.");
+  $("#carousel01").attr('src', 'assets/photos/kimmelAtrium01.png');
+  $("#carousel02").attr('src', 'assets/photos/kimmelAtrium02.png');
+  $("#carousel03").attr('src', 'assets/photos/kimmelAtrium03.png');
 }
 
 function hpcontent2() {
-  $("#hotspotTitle").text("Tisch Dining Hall");
-  $("#hotspotBody").text("The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.");
+  $("#hotspotTitle").text("Tisch Cafe");
+  $("#hotspotBody").text("The new cafeteria, overlooking First Avenue, focuses on fresh, healthy food.  Ennead designed five retail food venues across the campus, working with Danny Meyer’s Union Square Events consulting group.");
+  $("#carousel01").attr('src', 'assets/photos/tischCafe01.png');
+  $("#carousel02").attr('src', 'assets/photos/tischCafe02.png');
+  $("#carousel03").attr('src', 'assets/photos/tischCafe03.png');
 }
 
 function hpcontent3() {
   $("#hotspotTitle").text("Pharmacy");
-  $("#hotspotBody").text("Something about the pharmacy, make it long enough. Something about the pharmacy, make it long enough. Something about the pharmacy, make it long enough.");
+  $("#hotspotBody").text("The retail pharmacy is designed to provide prescription medication, consultation and vaccinations, as well as over-the-counter convenience products. ");
+  $("#carousel01").attr('src', 'assets/photos/pharmacy01.png');
+  $("#carousel02").attr('src', 'assets/photos/pharmacy02.png');
+  $("#carousel03").attr('src', 'assets/photos/pharmacy03.png');
 }
 
 function hpcontent4() {
   $("#hotspotTitle").text("Courtyard");
-  $("#hotspotBody").text("The atrium is the main front door to the hospital and provides clear access to the surgical reception and waiting areas, which are located on the open balconies above.");
+  $("#hotspotBody").text("The concourse leads to the main courtyard at the heart of the campus. Re-designed by Ennead, the central green space is a critical space of respite for staff, students, and patients.");
+  $("#carousel01").attr('src', 'assets/photos/tischCourtyard01.png');
+}
+
+function hpcontent5() {
+  $("#hotspotTitle").text("Children's Hospital Lobby");
+  $("#hotspotBody").text("A separate children’s lobby and dedicated vertical circulation create a separate and unique experience for children and their families.");
+  $("#carousel01").attr('src', 'assets/photos/hassenfeldLobby01.png');
+}
+
+function hpcontent6() {
+  $("#hotspotTitle").text("Gift Shop");
+  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#carousel01").attr('src', 'assets/photos/giftShop01.png');
+}
+
+function hpcontent7() {
+  $("#hotspotTitle").text("Tisch Lobby");
+  $("#hotspotBody").text("The lobby of Tisch hospital was redesigned and expanded, and four new glass-enclosed elevators were added to the outside of the building to correct a historic deficiency in the building.");
+  $("#carousel01").attr('src', 'assets/photos/tischLobby01.png');
+}
+
+function hpcontent8() {
+  $("#hotspotTitle").text("Meditation Room");
+  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#carousel01").attr('src', 'assets/photos/meditationRoom01.png');
 }
 
 function updateImageCount() {
@@ -143,13 +177,17 @@ $( window ).resize(function() {
 });
 
 $( document ).ready(function() {
-  $('.box').click(openHotspot);
   $('#hotspot01').click(hpcontent1);
   $('#hotspot02').click(hpcontent2);
   $('#hotspot03').click(hpcontent3);
   $('#hotspot04').click(hpcontent4);
+  $('#hotspot05').click(hpcontent5);
+  $('#hotspot06').click(hpcontent6);
+  $('#hotspot07').click(hpcontent7);
+  $('#hotspot08').click(hpcontent8);
 
   $('#hotspotClose').click(closeHotspot);
   $('#imageCarousel').on('slid.bs.carousel', function (e) {
     updateImageCount()})
+  $('.box').click(openHotspot);
 });

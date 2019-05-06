@@ -359,13 +359,13 @@ a {
 
 .hptooltip .hptooltiptext {
   /* visibility: hidden; */
-  width: 100%;
+  width: 120%;
 
 	font-family: 'FoundersGrotesk Semibold';
 	font-size: 10px;
 	font-weight: normal;
 	color: white;
-	letter-spacing: .03em;
+	letter-spacing: .08em;
 	line-height: 18px;
 	background-color: #333333;
 
@@ -487,8 +487,8 @@ a {
 }
 
 .box {
-  width:8%;
-  height:8%;
+  width:7%;
+  height:7%;
   position: absolute;
 
 	z-index: 1;
@@ -506,8 +506,8 @@ a {
 }
 
 #hotspot02 {
-  top:45%;
-  left:63.5%;
+  top:46%;
+  left:64%;
 }
 
 #hotspot03 {
@@ -520,6 +520,26 @@ a {
   left:69%;
 }
 
+#hotspot05 {
+  top:68%;
+  left:15%;
+}
+
+#hotspot06 {
+	top:36%;
+  left:62%;
+}
+
+#hotspot07 {
+	top:25%;
+  left:60%;
+}
+
+#hotspot08 {
+	top:18.5%;
+  left:51%;
+}
+
 .scrollingText{
 	position: fixed;
 	top: 30%;
@@ -529,7 +549,7 @@ a {
 
 #hotspotWindow{
 	position: fixed;
-	top: 20%;
+	top: 22.5%;
 	width: 22.5%;
 	right: 100px;
 	padding: 40px 30px;
