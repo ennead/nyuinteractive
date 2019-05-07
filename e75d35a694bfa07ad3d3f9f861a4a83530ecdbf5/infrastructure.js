@@ -29,9 +29,9 @@ function updateBox0(){
    $("#slideCounter").text("01");
    $("#title").text("Cogeneration Plant");
    $("#diagramBack").attr('src', backDiagramURL);
-   $("#diagramFront").attr('src', 'assets/diagrams/infrastructure/01.png').stop(true,true).hide().fadeIn("slow");
+   $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/01.png').stop(true,true).hide().fadeIn("slow");
    $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-   backDiagramURL = 'assets/diagrams/infrastructure/01.png';
+   backDiagramURL = 'assets/diagrams/Infrastructure/01.png';
    $("#pl2,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
    $("#pl1").addClass("activeLink")
    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
@@ -49,9 +49,9 @@ function updateBox0(){
       $("#slideCounter").text("02");
       $("#title").text("Materials Management and Loading");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/infrastructure/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/infrastructure/02.png';
+      backDiagramURL = 'assets/diagrams/Infrastructure/02.png';
       $("#pl1,#pl3,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl2").addClass("activeLink")
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
@@ -73,9 +73,9 @@ function updateBox0(){
       $("#slideCounter").text("03");
       $("#title").text("Primary Electric Service");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/infrastructure/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/infrastructure/03.png';
+      backDiagramURL = 'assets/diagrams/Infrastructure/03.png';
       $("#pl1,#pl2,#pl4").removeClass("activeLink").addClass("progressLink")
       $("#pl3").addClass("activeLink")
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
@@ -90,9 +90,9 @@ function updateBox0(){
       $("#slideCounter").text("04");
       $("#title").text("????");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/infrastructure/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/infrastructure/04.png';
+      backDiagramURL = 'assets/diagrams/Infrastructure/04.png';
       $("#pl1,#pl2,#pl3").removeClass("activeLink").addClass("progressLink")
       $("#pl4").addClass("activeLink")
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
