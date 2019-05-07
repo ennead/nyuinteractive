@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Ennead x NYULH - Creating an Integrated Campus
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="shortcut icon" href='assets\logos\favicon.png'>
+
+
+  <!-- style -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="haci.css">
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+
+
+
+  <!-- material design icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src= 'haci.js'></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div id="trigger">
+  </div>
+  <div id="block">
+
+  <div class="navBox">
+
+
+  <ul class="navBar" role="navigation">
+    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\ennead_black.png" alt="Ennead Logo"></a></li>
+    <li class="navQuote">Reinventing the modern urban hospital.</li>
+    <!-- <li class="navActive">Stories</li>
+    <li class="navLink">360° Tour</li>
+    <li class="navLink">Timeline</li>
+    <li class="navLink">Project List <i class="material-icons md-18" style="font-size: 16px">expand_more</i></li> -->
+  </ul>
+
+</div>
+
+  <a href="index.html"><div class="backButton"><h3>Back<img src="assets\icons\black_arrow.png" id="backArrow" alt="back arrow" style="width:75px;height:14px"></h3></div></a>
+
+
+  <ul class="progressBar" role="navigation">
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+    <li class="progressStep"> </li>
+    <span class=progressCounter id="high-z"><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18 clickable"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 04<i class="material-icons md-18 clickable"><a href="" id="prevSection">chevron_right</a></i></span>
+
+  </ul>
+
+    <!-- <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 02<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span> -->
+
+  <ul class="progressBarLinks">
+    <div class="tooltip"><li class="activeLink" id="pl1"><a href=""><span class="tooltiptext">Public Experience</span></a></li></div>
+    <div class="tooltip"><li class="progressLink" id="pl2"><a href=""><span class="tooltiptext">Integration of Greenspace, Major Entries</span></a></li></div>
+    <div class="tooltip"><li class="progressLink" id="pl3"><a href=""><span class="tooltiptext">Unified Public Circulation</span></a></li></div>
+    <div class="tooltip"><li class="progressLink" id="pl4"><a href=""><span class="tooltiptext">Visitor Amenities</span></a></li></div>
+  </ul>
+
+  <div class="scrollingContainer">
+          <img id="diagramFront" src="assets\diagrams\HACI\01.png">
+
+          </div>
+
+          <img id="diagramBack" src="assets\diagrams\HACI\01.png">
+  </div>
+  <div class="spacer"></div>
+
+
+    <div class="scrollingText">
+      <h3>Creating an Integrated Campus</h3>
+      <h2 id='title'><a name="section1">Public Experience</a></h2>
+      <span id="sectionBody">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    </span>
+    </div>
+
+    <div id="hotspotWindow">
+      <div class="windowNav"><h3>Section Title</h3><i class="material-icons md-18 clickable" id="hotspotClose">close</i></div>
+      <h2 id='hotspotTitle'>Hotspot Title</h2>
+      <span id="hotspotBody">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    </span>
+    <br>
+
+    <div id="imageCarousel" class="carousel slide carousel" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" id="carousel01" src="assets\photos\kimmelAtrium01.png">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" id="carousel02" src="assets\photos\kimmelAtrium02.png">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" id="carousel03" src="assets\photos\kimmelAtrium03.png">
+        </div>
+      </div>
+
+      <div class="windowNav"><span style="font-family: 'FoundersGrotesk light';font-size: 14px;color: #333333;letter-spacing: .03em;line-height: 4px;"><span id="imageIndex" style="font-family:FoundersGrotesk Semibold">
+      01</span> / <span id="imageCount">03</span></span><span style="line-height: 0">
+      <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev"><i class="material-icons md-18 clickable" style="line-height: 0;" id="prevPhoto">chevron_left</i></a>
+      <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next"><i class="material-icons md-18 clickable" style="line-height: 0;" id="nextPhoto">chevron_right</i></a>
+    </span></div>
+    </div>
+
+</div>
+<!-- </div> -->
+
+
+</body>
+
+</html>
