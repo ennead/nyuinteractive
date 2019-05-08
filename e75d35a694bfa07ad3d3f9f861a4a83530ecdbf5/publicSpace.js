@@ -35,8 +35,8 @@ function updateBox0(){
    $("#diagramFront").attr('src', 'assets/diagrams/Public Space/kimmelTischGround.png').stop(true,true).hide().fadeIn("slow");
    $("#sectionBody").text("The patient-care concourse connects the lobbies of the two inpatient towers. A coffee bar, retail pharmacy, giftshop, and cafeteria are all located along the concourse.");
    backDiagramURL = 'assets/diagrams/Public Space/kimmelTischGround.png';
-   $("#pl2").removeClass("activeLink").addClass("progressLink")
-   $("#pl1").addClass("activeLink")
+   $("#s2").removeClass("activeStep")
+   $("#s1").addClass("activeStep")
    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
    $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
    $('#prevSection').css('opacity', '0.2');
@@ -57,8 +57,8 @@ function updateBox0(){
       $("#diagramFront").attr('src', 'assets/diagrams/Public Space/kimmelFloor7.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Between the podium and the bed tower, the seventh floor houses a public café and conference center, the Child-life space and family resource center for the children’s hospital, and a rooftop terrace and garden.");
       backDiagramURL = 'assets/diagrams/Public Space/kimmelFloor7.png';
-      $("#pl1").removeClass("activeLink").addClass("progressLink")
-      $("#pl2").addClass("activeLink")
+      $("#s1").removeClass("activeStep")
+      $("#s2").addClass("activeStep")
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
       $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');
@@ -91,6 +91,8 @@ $('#pl2').click( function(e) {e.preventDefault(); controller.scrollTo(s2location
 
 function openHotspot() {
   $('#hotspotWindow').css("visibility", "visible");
+  $('#hotspotWindow').removeClass("windowHidden");
+  $('#hotspotWindow').addClass("windowVisible");
   hotspotActive= true;
   $("#imageCarousel").carousel(0);
   updateImageCount()
@@ -98,6 +100,8 @@ function openHotspot() {
 
 function closeHotspot() {
   $('#hotspotWindow').css('visibility', 'hidden');
+  $('#hotspotWindow').removeClass("windowVisible");
+  $('#hotspotWindow').addClass("windowHidden");
   hotspotActive= false;
   updateImageCount()
 }
