@@ -34,8 +34,8 @@ function updateBox0(){
    $("#diagramFront").attr('src', 'assets/diagrams/Public Space/kimmelTischGround.png').stop(true,true).hide().fadeIn("slow");
    $("#sectionBody").text("The patient-care concourse connects the lobbies of the two inpatient towers. A coffee bar, retail pharmacy, giftshop, and cafeteria are all located along the concourse.");
    backDiagramURL = 'assets/diagrams/Public Space/kimmelTischGround.png';
-   $("#s2").removeClass("activeStep")
-   $("#s1").addClass("activeStep")
+   $("#s2").removeClass("activeStep");
+   $("#s1").addClass("activeStep");
    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
    $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
    $('#prevSection').css('opacity', '0.2');
@@ -56,8 +56,8 @@ function updateBox0(){
       $("#diagramFront").attr('src', 'assets/diagrams/Public Space/kimmelFloor7.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Between the podium and the bed tower, the seventh floor houses a public café and conference center, the Child-life space and family resource center for the children’s hospital, and a rooftop terrace and garden.");
       backDiagramURL = 'assets/diagrams/Public Space/kimmelFloor7.png';
-      $("#s1").removeClass("activeStep")
-      $("#s2").addClass("activeStep")
+      $("#s1").removeClass("activeStep");
+      $("#s2").addClass("activeStep");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
       $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');

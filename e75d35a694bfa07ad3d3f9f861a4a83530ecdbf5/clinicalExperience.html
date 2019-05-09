@@ -22,7 +22,9 @@
   <link rel="shortcut icon" href='assets\logos\favicon.png'>
 
   <!-- style -->
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="clinicalExperienceStyle.css">
+  <!-- <link rel="stylesheet" type="text/css" href="publicSpace.css"> -->
 
   <!-- material design icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -47,20 +49,15 @@
 </head>
 
 <body>
-  <a id="section1"></a>
   <div id="trigger">
-  <a id="section2"></a>
-  <a id="section3"></a>
-  <a id="section4"></a>
-  <a id="section5"></a>
-</div>
+  </div>
   <div id="block">
 
   <div class="navBox">
 
 
   <ul class="navBar" role="navigation">
-    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\ennead_black.png" alt="Ennead Logo"></a></li>
+    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\enneadNYULH_logo.png" alt="Ennead Logo"></a></li>
     <li class="navQuote">Reinventing the modern urban hospital.</li>
     <!-- <li class="navActive">Stories</li>
     <li class="navLink">360° Tour</li>
@@ -74,14 +71,14 @@
 
 
   <ul class="progressBar" role="navigation">
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
+    <li class="progressStep activeStep" id="s1"> </li>
+    <li class="progressStep" id="s2"> </li>
+    <li class="progressStep" id="s3"> </li>
+    <li class="progressStep" id="s4"> </li>
+    <li class="progressStep" id="s5"> </li>
   </ul>
 
-  <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 05<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span>
+
 
   <ul class="progressBarLinks">
     <div class="tooltip"><li class="activeLink" id="pl1"><a href=""><span class="tooltiptext">Overview</span></a></li></div>
@@ -89,11 +86,21 @@
     <div class="tooltip"><li class="progressLink" id="pl3"><a href=""><span class="tooltiptext">OR and Procedure Platform</span></a></li></div>
     <div class="tooltip"><li class="progressLink" id="pl4"><a href=""><span class="tooltiptext">Inpatient Units</span></a></li></div>
     <div class="tooltip"><li class="progressLink" id="pl5"><a href=""><span class="tooltiptext">Hassenfeld Children's Hospital</span></a></li></div>
+    <li><span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 05<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span></li>
   </ul>
 
   <div class="scrollingContainer">
 
-    <img id="diagramFront" src="assets/diagrams/Section/fullsection.png"><img id="diagramBack" src="assets/diagrams/Section/fullsection.png">
+    <img id="diagramFront" src="assets/diagrams/Section/fullsection.png">
+
+  </div>
+
+  <img id="diagramBack" src="assets/diagrams/Section/fullsection.png">
+
+</div>
+
+  <div class="spacer"></div>
+
     <div class="scrollingText">
       <h3 id = 'subtitle'>Designing the Patient-Care Experience</h3>
       <h2 id='title'>Overview</h2>

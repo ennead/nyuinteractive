@@ -230,6 +230,64 @@ transition: opacity .2s ease-out;
 }
 
 
+.progressStep{
+	width: .38em;
+	height: .38em;
+	border-radius: 50%;
+	background: #333333;
+	/* margin-bottom: 33.5em; */
+	margin-left: .1em;
+}
+
+.progressStep::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: .19em;
+	width: 1px;
+	/* height: 34em; */
+	background: #333333;
+	z-index: -1;
+}
+
+.progressActive{
+	width: .6em;
+	height: .6em;
+	border-radius: 50%;
+	background: #333333;
+	/* margin-bottom: 9em; */
+	opacity: 0;
+}
+
+.progressLink{
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 50%;
+	opacity: 1;
+	background: rgb(51,51,51, 0);
+	/* margin-bottom: 32.5em; */
+	margin-right: .1em;
+	z-index: -1;
+}
+
+.activeLink{
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 50%;
+	opacity: 0;
+	background: rgb(51,51,51, 0.25);
+	/* margin-bottom: 32.5em; */
+	margin-right: .1em;
+}
+
+.learnMoreActive{
+	visibility: visible;
+}
+
+.learnMoreHidden{
+	visibility: hidden;
+}
+
 .progressBar:hover{
 opacity: 1;
 }
@@ -433,6 +491,18 @@ padding-top: 20px;
 }
 
 
+.scrollingContainer img{
+	display: block;
+	max-width: 100%;
+}
+
+#diagramFront{
+	top:0px;
+	left:0px;
+	z-index: -1;
+}
+
+
 .windowNav {
 display: flex;
 justify-content: space-between;
@@ -544,6 +614,10 @@ display: none;
 		display: none;
 	}
 
+	.box{
+		display: none;
+	}
+
 	.navBar{
 		height: 70px;
 	}
@@ -592,7 +666,9 @@ display: none;
 			height: 70px;}
 
 	#hotspotWindow{
-			right: 5%;}
+			right: 5%;
+			padding: 25px 25px;
+			}
 
 
 	.progressCounter{
@@ -633,12 +709,12 @@ display: none;
 		max-width: 100%;
 	}
 
-	.hotspotContainer {
+	/* .hotspotContainer {
 		top: 30%;
 		left: 150px;
 		position: fixed;
 		z-index: 1;
-	}
+	} */
 
 	#enneadLogo{
 		width:120px;
