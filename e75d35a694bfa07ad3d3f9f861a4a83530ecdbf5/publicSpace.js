@@ -112,6 +112,7 @@ function hpcontent1() {
   $("#carousel01").attr('src', 'assets/photos/kimmelAtrium01.png');
   $("#carousel02").attr('src', 'assets/photos/kimmelAtrium02.png');
   $("#carousel03").attr('src', 'assets/photos/kimmelAtrium03.png');
+  $("#carouselNav").css("visibility", "visible");
 }
 
 function hpcontent2() {
@@ -120,6 +121,7 @@ function hpcontent2() {
   $("#carousel01").attr('src', 'assets/photos/tischCafe01.png');
   $("#carousel02").attr('src', 'assets/photos/tischCafe02.png');
   $("#carousel03").attr('src', 'assets/photos/tischCafe03.png');
+  $("#carouselNav").css("visibility", "visible");
 }
 
 function hpcontent3() {
@@ -128,36 +130,50 @@ function hpcontent3() {
   $("#carousel01").attr('src', 'assets/photos/pharmacy01.png');
   $("#carousel02").attr('src', 'assets/photos/pharmacy02.png');
   $("#carousel03").attr('src', 'assets/photos/pharmacy03.png');
+  $("#carouselNav").css("visibility", "visible");
 }
 
 function hpcontent4() {
   $("#hotspotTitle").text("Courtyard");
   $("#hotspotBody").text("The concourse leads to the main courtyard at the heart of the campus. Re-designed by Ennead, the central green space is a critical space of respite for staff, students, and patients.");
   $("#carousel01").attr('src', 'assets/photos/tischCourtyard01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
 }
 
 function hpcontent5() {
   $("#hotspotTitle").text("Children's Hospital Lobby");
   $("#hotspotBody").text("A separate children’s lobby and dedicated vertical circulation create a separate and unique experience for children and their families.");
   $("#carousel01").attr('src', 'assets/photos/hassenfeldLobby01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+
 }
 
 function hpcontent6() {
   $("#hotspotTitle").text("Gift Shop");
   $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
   $("#carousel01").attr('src', 'assets/photos/giftShop01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
 }
 
 function hpcontent7() {
   $("#hotspotTitle").text("Tisch Lobby");
   $("#hotspotBody").text("The lobby of Tisch hospital was redesigned and expanded, and four new glass-enclosed elevators were added to the outside of the building to correct a historic deficiency in the building.");
   $("#carousel01").attr('src', 'assets/photos/tischLobby01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+
 }
 
 function hpcontent8() {
   $("#hotspotTitle").text("Meditation Room");
   $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
   $("#carousel01").attr('src', 'assets/photos/meditationRoom01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+
 }
 
 function updateImageCount() {
@@ -181,6 +197,7 @@ $( window ).resize(function() {
 });
 
 $( document ).ready(function() {
+  $('.box').click(openHotspot);
   $('#hotspot01').click(hpcontent1);
   $('#hotspot02').click(hpcontent2);
   $('#hotspot03').click(hpcontent3);
@@ -193,5 +210,4 @@ $( document ).ready(function() {
   $('#hotspotClose').click(closeHotspot);
   $('#imageCarousel').on('slid.bs.carousel', function (e) {
     updateImageCount()})
-  $('.box').click(openHotspot);
 });

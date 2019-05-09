@@ -210,6 +210,8 @@ a {
 	padding-left: 20px;
 	transform: translate3d(0px, 0px, 0px);
 	transition: transform .35s ease-in-out;
+	width:75px;
+	height:14px
 }
 
 .progressBar{
@@ -364,6 +366,7 @@ a {
 .hptooltip .hptooltiptext {
   /* visibility: hidden; */
   width: 120%;
+	/* overflow: auto; */
 
 	font-family: 'FoundersGrotesk Semibold';
 	font-size: 10px;
@@ -444,10 +447,7 @@ a {
 
 .scrollingContainer img{
 	display: block;
-	/* position: absolute; */
 	max-width: 100%;
-	/* top: 0px; */
-	/* left: 0px; */
 }
 
 #diagramFront{
@@ -477,6 +477,10 @@ a {
   position: absolute;
 
 	z-index: 1;
+}
+
+.box1{
+	visibility: hidden;
 }
 
 .clickable{
@@ -524,6 +528,49 @@ a {
 	top:18.5%;
   left:51%;
 }
+
+/* 7th floor */
+
+#hotspot09 {
+	top:16%;
+  left:17%;
+}
+#hotspot10 {
+	top:14%;
+  left:70%;
+}
+#hotspot11 {
+	top:25%;
+  left:17%;
+}
+#hotspot12 {
+	top:18.5%;
+  left:51%;
+}
+#hotspot13 {
+	top:18.5%;
+  left:51%;
+}
+#hotspot14 {
+	top:18.5%;
+  left:51%;
+}
+
+#hotspot15 {
+	top:18.5%;
+  left:51%;
+}
+
+#hotspot16 {
+	top:18.5%;
+  left:51%;
+}
+
+#hotspot17 {
+	top:18.5%;
+  left:51%;
+}
+
 
 .scrollingText{
 	position: fixed;
@@ -587,6 +634,7 @@ a {
 		font-size: 14px;
 		line-height: 20px;}
 
+
 	#diagramFront{
 		top: 62%;
 		left: 7.5%;
@@ -608,8 +656,6 @@ a {
 				position:fixed;
 				top: 22.5%;
 				width: 78%;
-				padding-left: 2.5%;
-				padding-right: 2.5%;
 				right: auto;
 			}
 
@@ -630,7 +676,7 @@ a {
 
 
 		#enneadLogo{
-			width:80px;
+			width:90px*;
 			height:auto;
 		}
 
@@ -643,6 +689,14 @@ a {
 		}
 
 	}
+
+	/* #backArrow{
+		padding-left: 20px;
+		transition: none;
+		width:50px;
+		height: auto;
+	} */
+
 
 	@media all and (max-width:600px) and  (min-width:481px){
 		h2 {
@@ -667,7 +721,7 @@ a {
 
 				#enneadLogo{
 					width:120px;
-					height:26px;
+					/* height:26px; */
 				}
 			}
 
@@ -730,7 +784,7 @@ a {
 
 					#enneadLogo{
 						width:120px;
-						height:26px;
+						/* height:26px; */
 					}
 				}
 
@@ -753,12 +807,17 @@ a {
 									height: 90px;
 								}
 
-								#diagramFront{
+								.scrollingContainer{
+									display: inline-block;
+									position: fixed;
 									top: 30%;
 									left: 120px;
 									width:55%;
-									height: auto;
-									position: fixed;
+								}
+
+								#diagramFront{
+									top: 0px;
+									left: 0px;
 									z-index: -1;
 								}
 
@@ -769,6 +828,9 @@ a {
 									height: auto;
 									position: fixed;
 									z-index: -2;
+								}
+								#hotspotWindow{
+									right: 5%;
 								}
 
 								.hotspotContainer {
@@ -782,16 +844,24 @@ a {
 									position: fixed;
 									top: 27%;
 									width: 22.5%;
-									right: 100px;
+									right: 5%;
 								}
 
 								.progressCounter{
 									display: none;
 								}
 
+								.tooltip{
+									display: none;
+								}
+
+								.hptooltip .hptooltiptext{
+									display: none;
+								}
+
 								#enneadLogo{
 									width:120px;
-									height:26px;
+									/* height:26px; */
 								}
 							}
 
@@ -805,12 +875,21 @@ a {
 											font-size: 18px;
 											line-height: 35px;
 										}
-										#diagramFront{
+										.scrollingContainer{
+											display: inline-block;
+											position: fixed;
 											top: 30%;
 											left: 150px;
 											width:55%;
-											height: auto;
-											position: fixed;
+										}
+										.scrollingContainer img{
+											display: block;
+											max-width: 100%;
+										}
+
+										#diagramFront{
+											top: 0px;
+											left: 0px;
 											z-index: -1;
 										}
 
@@ -832,6 +911,6 @@ a {
 
 										#enneadLogo{
 											width:120px;
-											height:26px;
+											/* height:26px; */
 										}
 									}
