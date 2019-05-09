@@ -24,6 +24,7 @@
 
   <!-- style -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="publicSpace.css">
   <link rel="stylesheet" type="text/css" href="carousel.css">
 
@@ -78,7 +79,7 @@
   <ul class="progressBar" role="navigation">
     <li class="progressStep activeStep" id="s1"> </li>
     <li class="progressStep" id="s2"> </li>
-    <span class=progressCounter id="high-z"><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18 clickable"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 02<i class="material-icons md-18 clickable"><a href="" id="prevSection">chevron_right</a></i></span>
+    <!-- <li><span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18 clickable"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 02<i class="material-icons md-18 clickable"><a href="" id="prevSection">chevron_right</a></i></span></li> -->
 
   </ul>
 
@@ -87,6 +88,7 @@
   <ul class="progressBarLinks">
     <div class="tooltip"><li class="activeLink" id="pl1"><a href=""><span class="tooltiptext">Ground Floor</span></a></li></div>
     <div class="tooltip"><li class="progressLink" id="pl2"><a href=""><span class="tooltiptext">Public Amenity Floor</span></a></li></div>
+    <li><span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18 clickable"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 02<i class="material-icons md-18 clickable"><a href="" id="prevSection">chevron_right</a></i></span></li>
   </ul>
 
   <div class="scrollingContainer">
@@ -117,6 +119,8 @@
           <span class="hptooltiptext">Meditation Room</span>
           </div>
 
+          <!-- 7th Floor -->
+
           <div id="hotspot09" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
           <span class="hptooltiptext">NE Terrace</span>
           </div>
@@ -132,21 +136,21 @@
           <div id="hotspot12" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
           <span class="hptooltiptext">Business Center</span>
           </div>
-
+<!--
           <div id="hotspot13" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
           <span class="hptooltiptext">Conference Rooms</span>
-          </div>
+          </div> -->
 
           <div id="hotspot14" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
-          <span class="hptooltiptext">Hassenfeld Multipurpose Room</span>
+          <span class="hptooltiptext">Multipurpose Room</span>
           </div>
 
           <div id="hotspot15" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
-          <span class="hptooltiptext">Hassenfeld Lobby</span>
+          <span class="hptooltiptext">Hassenfeld Reception</span>
           </div>
 
           <div id="hotspot16" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>
-          <span class="hptooltiptext">Children's Play Area</span>
+          <span class="hptooltiptext">Children's Center</span>
           </div>
 
           <div id="hotspot17" class="box clickable hptooltip box1" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background: none;"><circle cx="50" cy="50" r="25" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="-1.35s" repeatCount="indefinite"></animate></circle><circle cx="50" cy="50" r="8.0311" fill="none" ng-attr-stroke="{{config.c2}}" ng-attr-stroke-width="{{config.width}}" stroke="#ffffff" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="2.7" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="2.7" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"></animate></circle></svg>

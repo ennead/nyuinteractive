@@ -18,7 +18,6 @@ $(function () { // wait for document ready
 
   var diagramFrontWidth = $("#diagramFront").width()
   var diagramFrontHeight = $("#diagramFront").height();
-  console.log(diagramFrontWidth, diagramFrontHeight);
   $("hotspotContainer").width(diagramFrontWidth);
   $("hotspotContainer").height(diagramFrontHeight);
   $("#carousel").carousel();
@@ -173,7 +172,89 @@ function hpcontent8() {
   $("#carousel01").attr('src', 'assets/photos/meditationRoom01.png');
 
   $("#carouselNav").css("visibility", "hidden");
+}
 
+function hpcontent9() {
+  $("#hotspotTitle").text("NE Terrace");
+  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#carousel01").attr('src', 'assets/photos/nePatio01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+}
+
+function hpcontent9() {
+  $("#hotspotTitle").text("NE Terrace");
+  $("#hotspotBody").text("The terrace includes a dining area, a more densely planted garden, and a dedicated play space for children.");
+  $("#carousel01").attr('src', 'assets/photos/nePatio01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+}
+
+function hpcontent10() {
+  $("#hotspotTitle").text("SE Terrace");
+  $("#hotspotBody").text("The terrace includes a dining area, a more densely planted garden, and a dedicated play space for children.");
+  $("#carousel01").attr('src', 'assets/photos/sePatio01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+}
+
+function hpcontent11() {
+  $("#hotspotTitle").text("Kimmel Cafe");
+  $("#hotspotBody").text("The seventh-floor café and terrace allows for outdoor dining, overlooking the East River.");
+  $("#carousel01").attr('src', 'assets/photos/kimmelCafe01.png');
+  $("#carousel02").attr('src', 'assets/photos/kimmelCafe02.png');
+
+  $("#carouselNav").css("visibility", "visible");
+}
+
+function hpcontent12() {
+  $("#hotspotTitle").text("Conference Center");
+  $("#hotspotBody").text("The pre-function and conference spaces is a critical node of academic life embedded within the clinical environment.");
+  $("#carousel01").attr('src', 'assets/photos/businessCenter01.png');
+  $("#carousel02").attr('src', 'assets/photos/businessCenter02.png');
+  $("#carousel03").attr('src', 'assets/photos/conferenceRoom01.png');
+
+  $("#carouselNav").css("visibility", "visible");
+}
+
+// function hpcontent13() {
+//   $("#hotspotTitle").text("Conference Rooms");
+//   $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+//   $("#carousel01").attr('src', 'assets/photos/conferenceRoom01.png');
+//
+//   $("#carouselNav").css("visibility", "hidden");
+// }
+
+function hpcontent14() {
+  $("#hotspotTitle").text("Multipurpose Room");
+  $("#hotspotBody").text("This flexible space within the Children’s Hospital can be used for academic and departmental programs, child-life activities, performances, and holiday parties.");
+  $("#carousel01").attr('src', 'assets/photos/multipurposeRoom01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+}
+
+function hpcontent15() {
+  $("#hotspotTitle").text("Hassenfeld Reception");
+  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#carousel01").attr('src', 'assets/photos/hassenfeldDesk01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+}
+
+function hpcontent16() {
+  $("#hotspotTitle").text("Children's Center");
+  $("#hotspotBody").text("The Children’s Center supports child-life activities, including classrooms, a play space, and a broadcast room.");
+  $("#carousel01").attr('src', 'assets/photos/childrensCenter01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
+}
+
+function hpcontent17() {
+  $("#hotspotTitle").text("Hassenfeld Terrace");
+  $("#hotspotBody").text("The terrace includes a dining area, a more densely planted garden, and a dedicated play space for children.");
+  $("#carousel01").attr('src', 'assets/photos/hassenfeldPatio01.png');
+
+  $("#carouselNav").css("visibility", "hidden");
 }
 
 function updateImageCount() {
@@ -182,18 +263,15 @@ function updateImageCount() {
 
   $("#imageIndex").text("0"+currentIndex);
   $("#imageCount").text("0"+totalItems);
-  console.log(currentIndex);
 }
 
 $( window ).resize(function() {
   diagramFrontWidth = $("#diagramFront").width()
   diagramFrontHeight = $("#diagramFront").height();
-  console.log("diagram: ",diagramFrontWidth, diagramFrontHeight);
   $("hotspotContainer").width(diagramFrontWidth);
   $("hotspotContainer").height(diagramFrontHeight);
   hpWidth = $("#hotspotContainer").width();
   hpHeight = $("#hotspotContainer").height();
-  console.log("hotspots: ",hpWidth, hpHeight);
 });
 
 $( document ).ready(function() {
@@ -206,6 +284,17 @@ $( document ).ready(function() {
   $('#hotspot06').click(hpcontent6);
   $('#hotspot07').click(hpcontent7);
   $('#hotspot08').click(hpcontent8);
+
+  // 7th floor
+  $('#hotspot09').click(hpcontent9);
+  $('#hotspot10').click(hpcontent10);
+  $('#hotspot11').click(hpcontent11);
+  $('#hotspot12').click(hpcontent12);
+  // $('#hotspot13').click(hpcontent13);
+  $('#hotspot14').click(hpcontent14);
+  $('#hotspot15').click(hpcontent15);
+  $('#hotspot16').click(hpcontent16);
+  $('#hotspot17').click(hpcontent17);
 
   $('#hotspotClose').click(closeHotspot);
   $('#imageCarousel').on('slid.bs.carousel', function (e) {
