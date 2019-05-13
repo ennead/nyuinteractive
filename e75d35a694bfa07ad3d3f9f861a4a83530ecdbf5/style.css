@@ -236,14 +236,14 @@ transition: opacity .2s ease-out;
 	border-radius: 50%;
 	background: #333333;
 	/* margin-bottom: 33.5em; */
-	margin-left: .1em;
+	/* margin-left: .1em; */
 }
 
 .progressStep::before{
 	content: '';
 	position: absolute;
 	top: 0;
-	right: .19em;
+	right: .17em;
 	width: 1px;
 	/* height: 34em; */
 	background: #333333;

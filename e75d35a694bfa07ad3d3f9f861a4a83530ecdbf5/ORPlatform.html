@@ -14,15 +14,20 @@
 
   <meta charset="utf-8">
   <title>
-    Ennead x NYULH - OR Platform
+    Ennead x NYULH - Public Space and Ammenities
   </title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <link rel="shortcut icon" href='assets\logos\favicon.png'>
 
+
   <!-- style -->
-  <link rel="stylesheet" type="text/css" href="ORstyle.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="ORPlatform.css">
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+
 
 
   <!-- material design icons -->
@@ -36,13 +41,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
-  <script src= 'ORscript.js'></script>
 
-  <!-- preload content -->
-  <link rel="preload" href="assets/diagrams/OR Platform/fullHighlight.png" as="image">;
-  <link rel="preload" href="assets/diagrams/OR Platform/entrance.png" as="image">;
-  <link rel="preload" href="assets/diagrams/OR Platform/blueHighlights.png" as="image">;
-  <link rel="preload" href="assets/diagrams/OR Platform/orangeHighlight.png" as="image">;
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src= 'ORPlatform.js'></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -55,7 +63,7 @@
 
 
   <ul class="navBar" role="navigation">
-    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\ennead_black.png" alt="Ennead Logo"></a></li>
+    <li class="navLogo" class="tooltip"><a href="index.html"><img id="enneadLogo" src="assets\logos\enneadNYULH_logo.png" alt="Ennead Logo"></a></li>
     <li class="navQuote">Reinventing the modern urban hospital.</li>
     <!-- <li class="navActive">Stories</li>
     <li class="navLink">360° Tour</li>
@@ -65,38 +73,48 @@
 
 </div>
 
-  <a href="clinicalExperience.html"><div class="backButton"><h3>Back<img src="assets\icons\black_arrow.png" id="backArrow" alt="back arrow" style="width:75px;height:14px"></h3></div></a>
+<a href="clinicalExperience.html"><div class="backButton"><h3>Back<img src="assets\icons\black_arrow.png" id="backArrow" alt="back arrow" style="width:75px;height:14px"></h3></div></a>
 
 
-  <ul class="progressBar" role="navigation">
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
-    <li class="progressStep"> </li>
+<ul class="progressBar" role="navigation">
+  <li class="progressStep activeStep" id="s1"> </li>
+  <li class="progressStep" id="s2"> </li>
+  <li class="progressStep" id="s3"> </li>
+  <li class="progressStep" id="s4"> </li>
+</ul>
 
-  </ul>
 
-    <span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 04<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span>
 
-  <ul class="progressBarLinks">
-    <div class="tooltip"><li class="activeLink" id="pl1"><a href=""><span class="tooltiptext">Overview</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl2"><a href=""><span class="tooltiptext">Arrival and Reception</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl3"><a href=""><span class="tooltiptext">Prep and Recovery</span></a></li></div>
-    <div class="tooltip"><li class="progressLink" id="pl4"><a href=""><span class="tooltiptext">OR and Procedure Rooms</span></a></li></div>
-  </ul>
+<ul class="progressBarLinks">
+  <div class="tooltip"><li class="activeLink" id="pl1"><a href=""><span class="tooltiptext">Overview</span></a></li></div>
+  <div class="tooltip"><li class="progressLink" id="pl2"><a href=""><span class="tooltiptext">Arrival and Reception</span></a></li></div>
+  <div class="tooltip"><li class="progressLink" id="pl3"><a href=""><span class="tooltiptext">Prep and Recovery</span></a></li></div>
+  <div class="tooltip"><li class="progressLink" id="pl4"><a href=""><span class="tooltiptext">OR and Procedure Rooms</span></a></li></div>
+  <li><span class=progressCounter><span style="font-family:FoundersGrotesk Semibold"><i class="material-icons md-18"><a href="" id="nextSection">chevron_left</a></i><span id="slideCounter">01</span></span> / 04<i class="material-icons md-18"><a href="" id="prevSection">chevron_right</a></i></span></li>
+</ul>
 
   <div class="scrollingContainer">
 
-    <img id="diagramFront" src="assets/diagrams/OR Platform/fullHighlight.png"><img id="diagramBack" src="assets/diagrams/OR Platform/fullHighlight.png">
+          <img id="diagramFront" src="assets/diagrams/OR Platform/fullHighlight.png">
+
+
+          </div>
+
+          <img id="diagramBack" src="assets/diagrams/OR Platform/fullHighlight.png">
+
+  </div>
+
+  <div class="spacer"></div>
+
     <div class="scrollingText">
-      <h3>OR Platform</h3>
+      <h3 id = 'subtitle'>OR Platform</h3>
       <h2 id='title'><a name="section1">A highly flexible and efficient platform.</a></h2>
       <span id="sectionBody">
       The new tower houses 32 operating and procedure suites located on three floors. All staff support spaces and sterile processing are centralized off the floor, to maximize the efficiency of the planning.
     </span>
     </div>
-  </div>
-</div>
+<!-- </div> -->
+
 
 </body>
 
