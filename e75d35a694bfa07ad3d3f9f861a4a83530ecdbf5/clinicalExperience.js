@@ -19,6 +19,8 @@ $(function () { // wait for document ready
 
   $(".scrollingText").stop(true,true).hide().slideDown("slow");
 
+  $(".spacer").css("height", h);
+
   // show pin state
 
   function updateBox0 () {
@@ -163,4 +165,7 @@ new ScrollMagic.Scene({duration: sectionduration, offset: (sectionduration*3), t
 $( window ).resize(function() {
   diagramFrontWidth = $("#diagramFront").width()
   diagramFrontHeight = $("#diagramFront").height();
+
+  h = window.innerHeight;
+  $(".spacer").css("height", h);
 });

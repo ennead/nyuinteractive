@@ -1,433 +1,25 @@
-@font-face {
-	font-family: 'FoundersGrotesk Light';
-	src: url('fonts/FoundersGrotesk-Light.otf');
-	src:
-	local('FoundersGrotesk Light'),
-	local('FoundersGrotesk-Light'),
-	url('fonts/FoundersGrotesk-Light.otf')
-	format('opentype');
-	font-weight: light;
-}
-/*semibold version*/
-@font-face {
-	font-family: 'FoundersGrotesk Semibold';
-	src: url('fonts/FoundersGrotesk-Semibold.otf');
-	src:
-	local('FoundersGrotesk Semibold'),
-	local('FoundersGrotesk-Semibold'),
-	url('fonts/FoundersGrotesk-Semibold.otf')
-	format('opentype');
-	font-weight: semibold;
-}
-
-@import "@material/elevation/mdc-elevation";
-/* material desing symbols */
-.material-icons {
-	font-family: 'Material Icons';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;  /* Preferred icon size */
-	display: inline-block;
-	line-height: 0;
-	text-transform: none;
-	letter-spacing: normal;
-	word-wrap: normal;
-	white-space: nowrap;
-	direction: ltr;
-
-	/* Support for all WebKit browsers. */
-	-webkit-font-smoothing: antialiased;
-	/* Support for Safari and Chrome. */
-	text-rendering: optimizeLegibility;
-
-	/* Support for Firefox. */
-	-moz-osx-font-smoothing: grayscale;
-
-	/* Support for IE. */
-	font-feature-settings: 'liga';
-}
-
-h2{
-	font-family: 'FoundersGrotesk Semibold';
-	font-size: 42px;
-	font-weight: normal;
-	color: #333333;
-	letter-spacing: 0px;
-	line-height: 40px;
-}
-
-h3{
-	font-family: 'FoundersGrotesk Semibold';
-	font-size: 14px;
-	font-weight: normal;
-	color: #333333;
-	letter-spacing: .03em;
-	line-height: 0;
-}
-
-
-body {
-	font-family: 'FoundersGrotesk Light';
-	font-size: 18px;
-	font-weight: light;
-	color: #333333;
-	letter-spacing: 0px;
-	line-height: 35px;
-
-	margin: 0 5% 0 5%;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	background-color: #EBEBEB;
-}
-
-ul {
-	list-style: none;
-}
-
-li:hover{
-	/* opacity: 1; */
-	cursor: pointer;
-}
-
-a {
-  color:inherit;
-  text-decoration: none;
- }
-
-#block{
-	width: 100%;
-	/* position: relative; */
-	top: 0;
-	left: 0;
-	margin-left: 0;
-	padding-left:0;
-}
-
 .spacer{
-	height: 500px;
-}
-
-.navBox{
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100px;
-	/* min-height: 50px; */
-	width: 100%;
-	clear: both;
-	margin: 0 0 0 0;
-	background: #FFFFFF;
-	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-
-.navBar{
-	display: flex;
-	flex: 200px;
-	font-family: 'FoundersGrotesk Semibold';
-	font-size: 14px;
-	font-weight: normal;
-	color: #333333;
-	text-align: right;
-	letter-spacing: 0.05em;
-	line-height: 25px;
-	align-items: center;
-
-
-	margin: 0 0 0 0;
-	padding-left: 5%;
-	padding-right: 5%;
-	height: 100px;
-}
-
-.navLogo{
-	flex: 5;
-	margin-right: auto;
-	text-align: left;
-	opacity: 1;
-}
-
-#enneadLogo{
-	width:120px;
-	height:26px;
-}
-
-.navActive{
-	margin-bottom: 0px;
-	display: inline-block;
-	text-decoration: none;
-	line-height: 0.85;
-	opacity: 1;
-}
-
-.navActive::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 2px;
-	background: #000;
-	transition: width .3s;
-}
-
-.navActive:hover::after {
-	width: 100%;
-
-}
-
-.navLink{
-	flex: 1;
-	opacity: .5;
-	text-decoration: none;
-	margin-bottom: 0px;
-	display: inline-block;
-	line-height: 0.85;
-	transition: opacity .35s ease-out;
-	-moz-transition: opacity .35s ease-out;
-	-webkit-transition: opacity .35s ease-out;
-	-o-transition: opacity .35s ease-out;
-}
-
-.backButton{
-	position: fixed;
-	display: flex;
-	vertical-align: middle;
-	align-items: center;
-	cursor: pointer;
-
-	top: 13%;
-	left: 5.5%;
-	/* padding-left: 3%; */
-}
-
-
-.backButton:hover #backArrow{
-	transform: translate3d(-12px, 0px, 0px);
-}
-
-#backArrow{
-	padding-left: 20px;
-	transform: translate3d(0px, 0px, 0px);
-	transition: transform .35s ease-in-out;
-}
-
-.progressBar{
-	/* display: flex; */
-	flex-direction: column;
-	position: fixed;
-	align-items: center;
-	height: auto;
-
-	margin: 0;
-	top: 25%;
-	left: 5%;
-	padding-left: 3%;
-	opacity: .8;
-	transition: opacity .2s ease-out;
-	-moz-transition: opacity .2s ease-out;
-	-webkit-transition: opacity .2s ease-out;
-	-o-transition: opacity .2s ease-out;
-}
-
-
-.progressBar:hover{
-	opacity: 1;
+	height: 700px;
 }
 
 .progressStep{
-	width: .38em;
-	height: .38em;
-	border-radius: 50%;
-	background: #333333;
 	margin-bottom: 10.82em;
-	margin-left: .1em;
-
-	/* border: 8px solid;
-	border-color: rgba(51,51,51, 0) */
-}
-
-.progressStep:hover{
-	cursor: pointer;
-	/* border: 8px solid; */
-	/* border-color: rgba(51,51,51, 0.25) */
 }
 
 .progressStep::before{
-	content: '';
-	position: absolute;
-	top: 0;
-	right: .15em;
-	width: 1px;
 	height: 34em;
-	background: #333333;
-	z-index: -1;
-}
-
-.progressStep:first-child::before {
-	display: none;
 }
 
 .progressActive{
-	width: .6em;
-	height: .6em;
-	border-radius: 50%;
-	background: #333333;
 	margin-bottom: 9em;
-	opacity: .5;
-}
-
-.progressBarLinks{
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	align-items: center;
-
-	margin: 0;
-	top: 24.5%;
-	left: 4.65%;
-	padding-left: 3%;
-	transition: opacity .2s ease-out;
-	-moz-transition: opacity .2s ease-out;
-	-webkit-transition: opacity .2s ease-out;
-	-o-transition: opacity .2s ease-out;
-
-	z-index: 1
 }
 
 .progressLink{
-	width: 1.2em;
-	height: 1.2em;
-	border-radius: 50%;
-	opacity: 1;
-	background: rgb(51,51,51, 0);
 	margin-bottom: 9.95em;
-	margin-right: .1em;
-	z-index: -1;
 }
 
 .activeLink{
-	width: 1.2em;
-	height: 1.2em;
-	border-radius: 50%;
-	opacity: 1;
-	background: rgb(51,51,51, 0.25);
 	margin-bottom: 9.95em;
-	margin-right: .1em;
-}
-
-.tooltip {
-	opacity: 1;
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  /* visibility: hidden; */
-  width: 130px;
-
-	font-family: 'FoundersGrotesk Semibold';
-	font-size: 14px;
-	font-weight: normal;
-	color: black;
-	letter-spacing: .03em;
-	line-height: 18px;
-
-  text-align: left;
-  border-radius: 3px;
-  padding: 3px 0;
-  position: absolute;
-  z-index: 1;
-  top: 2px;
-  left: 150%;
-
-	opacity: 0;
-	-webkit-transition: opacity 300ms ease-in-out;
-	transition: opacity 300ms ease-in-out;
-}
-
-.progressLink:hover .tooltiptext {
-  opacity: .6;
-}
-.activeLink:hover .tooltiptext {
-  opacity: .6;
-}
-
-.hptooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.hptooltip .hptooltiptext {
-  /* visibility: hidden; */
-  width: 120%;
-
-	font-family: 'FoundersGrotesk Semibold';
-	font-size: 10px;
-	font-weight: normal;
-	color: white;
-	letter-spacing: .08em;
-	line-height: 18px;
-	background-color: #333333;
-
-  text-align: center;
-  border-radius: 3px;
-  padding: 2px 0px;
-	padding-top: 4px;
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  left: 0%;
-
-	opacity: 0;
-	-webkit-transition: opacity 300ms ease-in-out;
-	transition: opacity 300ms ease-in-out;
-}
-
-
-.box:hover .hptooltiptext {
-  opacity: .8;
-}
-
-
-#prevSection{
-	opacity: .2;
-}
-
-.progressCounter{
-	position:absolute;
-	display: inline;
-
-	font-family: 'FoundersGrotesk light';
-	font-size: 14px;
-	color: #333333;
-	letter-spacing: .03em;
-	line-height: 0;
-	white-space: nowrap;
-	float: left;
-	top: 40em;
-	left: -40px;
-	/* padding-bottom: 7.23em; */
-	vertical-align: middle;
-
-	/* Safari */
-	-webkit-transform: rotate(-90deg);
-	/* Firefox */
-	-moz-transform: rotate(-90deg);
-	/* IE */
-	-ms-transform: rotate(-90deg);
-	/* Opera */
-	-o-transform: rotate(-90deg);
-}
-
-#high-z{
-	z-index: 5;
-}
-
-
-.material-icons{
-	vertical-align: middle;
-	font-size: 2px;
-	padding-bottom: 2px;
 }
 
 .scrollingContainer{
@@ -438,20 +30,6 @@ a {
 	width:55%;
 }
 
-.scrollingContainer img{
-	display: block;
-	/* position: absolute; */
-	max-width: 100%;
-	/* top: 0px; */
-	/* left: 0px; */
-}
-
-#diagramFront{
-	top:0px;
-	left:0px;
-	z-index: -1;
-}
-
 #diagramBack{
 	top: 20%;
 	left: 200px;
@@ -460,119 +38,12 @@ a {
 	position: fixed;
 	z-index: -2;}
 
-.hotspotContainer {
-	top: 20%;
-	left: 200px;
-	position: fixed;
-	z-index: 1;
-}
-
-.box {
-  width:7%;
-  height:7%;
-  position: absolute;
-
-	z-index: 1;
-}
-
-.clickable{
-	cursor: pointer;
-	padding: 5px;
-	margin: -5px;
-}
-
-#hotspot01 {
-  top:70%;
-  left:28%;
-}
-
-#hotspot02 {
-  top:46%;
-  left:64%;
-}
-
-#hotspot03 {
-  top:45%;
-  left:45%;
-}
-
-#hotspot04 {
-  top:15%;
-  left:69%;
-}
-
-#hotspot05 {
-  top:68%;
-  left:15%;
-}
-
-#hotspot06 {
-	top:36%;
-  left:62%;
-}
-
-#hotspot07 {
-	top:25%;
-  left:60%;
-}
-
-#hotspot08 {
-	top:18.5%;
-  left:51%;
-}
-
-.scrollingText{
-	position: fixed;
-	top: 30%;
-	width: 22.5%;
-	right: 100px;
-}
-
-#hotspotWindow{
-	position: fixed;
-	top: 22.5%;
-	width: 22.5%;
-	right: 100px;
-	padding: 40px 30px;
-	background-color: white;
-	z-index: 2;
+.box1{
 	visibility: hidden;
-
-	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#hotspotWindow img{
-	width: 100%;
-}
-
-#imageCarousel{
-	padding-top: 20px;
-}
-
-
-.windowNav {
-  display: flex;
-  justify-content: space-between;
-	z-index: 5;
-}
-
-::-webkit-scrollbar {
-	display: none;
-}
 
 @media all and (max-width:480px) {
-	h2 {
-		font-size: 22px;
-		line-height: 22px;}
-
-	h3 {
-		font-size: 12px;}
-
-	body{
-		font-size: 14px;
-		line-height: 20px;}
-
 	#diagramFront{
 		top: 62%;
 		left: 7.5%;
@@ -581,243 +52,100 @@ a {
 		position: fixed;
 		z-index: -1;}
 
-			#diagramBack{
-				top: 62%;
-				left: 7.5%;
-				width:82.5%;
-				height: auto;
-				position: fixed;
-				z-index: -2;
-			}
-
-			.scrollingText{
-				position:fixed;
-				top: 22.5%;
-				width: 78%;
-				padding-left: 2.5%;
-				padding-right: 2.5%;
-				right: auto;
-			}
-
-			.progressBar{
-				display: none;
-			}
-			.progressBarLinks{
-				display: none;
-			}
-
-		.progressCounter{
-			display: none;
-		}
-
-		.navQuote{
-			display: none;
-		}
-
-
-		#enneadLogo{
-			width:80px;
-			height:auto;
-		}
-
-		.navBar{
-			height: 70px;
-		}
-
-		.navBox{
-			height: 70px;
-		}
+	#diagramBack{
+		top: 62%;
+		left: 7.5%;
+		width:82.5%;
+		height: auto;
+		position: fixed;
+		z-index: -2;}
 
 	}
 
-	@media all and (max-width:600px) and  (min-width:481px){
-		h2 {
-			font-size: 28px;
-			line-height: 24px;}
-		h3 {
-				font-size: 16px;}
-		body{
-					font-size: 16px;
-					line-height: 20px;
-				}
-				.progressBar{
-					display: none;
-				}
-				.progressBarLinks{
-					display: none;
-				}
+@media all and (max-width:600px) and  (min-width:481px){
 
-				.progressCounter{
-					display: none;
-				}
 
-				#enneadLogo{
-					width:120px;
-					height:26px;
-				}
-			}
+	}
 
-			@media all and (max-width:768px) and (min-width:601px){
-				h2 {
-					font-size: 32px;
-					line-height: 30px;}
-					h3 {
-						font-size: 18px;}
-						body{
-							font-size: 18px;
-							line-height: 32px;
-						}
+@media all and (max-width:768px) and (min-width:601px){
 
-						#diagramFront{
-							top: 52%;
-							left: 7.5%;
-							width:82.5%;
-							height: auto;
-							position: fixed;
-							z-index: -1;
-						}
 
-						#diagramBack{
-							top: 52%;
-							left: 7.5%;
-							width:82.5%;
-							height: auto;
-							position: fixed;
-							z-index: -2;
-						}
+		#diagramFront{
+			top: 45%;
+			left: 7.5%;
+			width:82.5%;
+			height: auto;
+			position: fixed;
+			z-index: -1;
+		}
 
-						.scrollingText{
-							position:fixed;
-							top: 22.5%;
-							width: 78%;
-							padding-left: 2.5%;
-							padding-right: 2.5%;
-							right: auto;
-						}
+		#diagramBack{
+			top: 45%;
+			left: 7.5%;
+			width:82.5%;
+			height: auto;
+			position: fixed;
+			z-index: -2;
+		}
 
-						.progressBar{
-							display: none;
-						}
-						.progressBarLinks{
-							display: none;
-						}
-
-						.progressCounter{
-							display: none;
-						}
-
-					.navBar{
-						height: 90px;
-					}
-
-					.navBox{
-						height: 90px;
-					}
-
-					#enneadLogo{
-						width:120px;
-						height:26px;
-					}
 				}
 
-					@media all and (max-width:1200px) and (min-width:769px){
-						h2 {
-							font-size: 32px;
-							line-height: 30px;}
-							h3 {
-								font-size: 12px;}
-								body{
-									font-size: 14px;
-									line-height: 30px;
-								}
+	@media all and (max-width:1200px) and (min-width:769px){
 
-								.navBar{
-									height: 90px;
-								}
+		.scrollingContainer{
+			display: inline-block;
+			position: fixed;
+			top: 30%;
+			left: 120px;
+			width:55%;
+		}
 
-								.navBox{
-									height: 90px;
-								}
+		#diagramFront{
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+		}
 
-								#diagramFront{
-									top: 30%;
-									left: 120px;
-									width:55%;
-									height: auto;
-									position: fixed;
-									z-index: -1;
-								}
+		#diagramBack{
+			top: 30%;
+			left: 120px;
+			width:55%;
+			height: auto;
+			position: fixed;
+			z-index: -2;
+		}
 
-								#diagramBack{
-									top: 30%;
-									left: 120px;
-									width:55%;
-									height: auto;
-									position: fixed;
-									z-index: -2;
-								}
+		.hotspotContainer {
+			top: 30%;
+			left: 120px;
+			position: fixed;
+			z-index: 1;
+		}
+	}
 
-								.hotspotContainer {
-									top: 30%;
-									left: 120px;
-									position: fixed;
-									z-index: 1;
-								}
+@media all and (max-width:1600px) and (min-width:1201px) {
 
-								.scrollingText{
-									position: fixed;
-									top: 27%;
-									width: 22.5%;
-									right: 100px;
-								}
+		.scrollingContainer{
+			display: inline-block;
+			position: fixed;
+			top: 30%;
+			left: 150px;
+			width:55%;
+		}
 
-								.progressCounter{
-									display: none;
-								}
+		#diagramFront{
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+		}
 
-								#enneadLogo{
-									width:120px;
-									height:26px;
-								}
-							}
+		#diagramBack{
+			top: 30%;
+			left: 150px;
+			width:55%;
+			height: auto;
+			position: fixed;
+			z-index: -2;
+		}
 
-							@media all and (max-width:1600px) and (min-width:1201px) {
-								h2 {
-									font-size: 42px;
-									line-height: 38px;}
-									h3 {
-										font-size: 14px;}
-										body{
-											font-size: 18px;
-											line-height: 35px;
-										}
-										#diagramFront{
-											top: 30%;
-											left: 150px;
-											width:55%;
-											height: auto;
-											position: fixed;
-											z-index: -1;
-										}
-
-										#diagramBack{
-											top: 30%;
-											left: 150px;
-											width:55%;
-											height: auto;
-											position: fixed;
-											z-index: -2;
-										}
-
-										.hotspotContainer {
-											top: 30%;
-											left: 150px;
-											position: fixed;
-											z-index: 1;
-										}
-
-										#enneadLogo{
-											width:120px;
-											height:26px;
-										}
-									}
+}

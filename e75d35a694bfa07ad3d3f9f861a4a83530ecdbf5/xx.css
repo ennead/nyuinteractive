@@ -3,7 +3,7 @@
 }
 
 .progressStep{
-	margin-bottom: 16.5em;
+	margin-bottom: 8.1em;
 }
 
 .progressStep::before{
@@ -15,25 +15,25 @@
 }
 
 .progressLink{
-	margin-bottom: 15.7em;
+	margin-bottom: 7.23em;
 }
 
 .activeLink{
-	margin-bottom: 15.7em;
+	margin-bottom: 7.23em;
 }
 
 .scrollingContainer{
 	display: inline-block;
 	position: fixed;
-	top: 20%;
-	left: 200px;
-	width:55%;
+	top: 25%;
+	left: 150px;
+	width:65%;
 }
 
 #diagramBack{
-	top: 20%;
-	left: 200px;
-	width:55%;
+	top: 25%;
+	left: 150px;
+	width:65%;
 	height: auto;
 	position: fixed;
 	z-index: -2;}

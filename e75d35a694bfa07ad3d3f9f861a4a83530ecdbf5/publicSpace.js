@@ -22,6 +22,8 @@ $(function () { // wait for document ready
   $("hotspotContainer").height(diagramFrontHeight);
   $("#carousel").carousel();
 
+  $(".spacer").css("height", h);
+
   // show pin state
 
 function updateBox0(){
@@ -272,6 +274,9 @@ $( window ).resize(function() {
   $("hotspotContainer").height(diagramFrontHeight);
   hpWidth = $("#hotspotContainer").width();
   hpHeight = $("#hotspotContainer").height();
+
+  h = window.innerHeight;
+  $(".spacer").css("height", h);
 });
 
 $( document ).ready(function() {
