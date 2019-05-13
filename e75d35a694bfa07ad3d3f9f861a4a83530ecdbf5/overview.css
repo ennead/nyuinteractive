@@ -45,7 +45,7 @@
 
 @media all and (max-width:480px) {
 	#diagramFront{
-		top: 62%;
+		top: 58%;
 		left: 7.5%;
 		width:82.5%;
 		height: auto;
@@ -53,7 +53,7 @@
 		z-index: -1;}
 
 	#diagramBack{
-		top: 62%;
+		top: 58%;
 		left: 7.5%;
 		width:82.5%;
 		height: auto;

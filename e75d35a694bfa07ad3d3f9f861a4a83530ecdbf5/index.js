@@ -21,20 +21,22 @@ $(function () { // wait for document ready
 
   $(".spacer").css("height", h);
 
+  $('#bImage').css("height", h);
+
   // show pin state
 
   function updateBox0 () {
 
     $("#slideCounter").text("01");
     $("#title").text("Overview / Masterplan");
-    $("#diagramBack").attr('src', backDiagramURL);
-    $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+    // $("#diagramBack").attr('src', backDiagramURL);
+    // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
     $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
     backDiagramURL = 'assets/diagrams/index/original/01.png';
-    $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
-    $("#s2,#s3,#s4,#s5,#s6").removeClass("activeStep");
+    $("#s2,#s3,#s4,#s5").removeClass("activeStep");
     $("#s1").addClass("activeStep");
-    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
+    $("#learnMoreLink").attr('href', 'overview.html');
+    $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location); return false; } );
     $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
     $('#prevSection').css('opacity', '0.2');
     $('#nextSection').css('opacity', '1');
@@ -49,12 +51,13 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Designing the Patient-Care Experience");
-      $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/index/original/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      // $("#diagramBack").attr('src', backDiagramURL);
+      // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/02.png';
-      $("#s1,#s3,#s4,#s5,#s6").removeClass("activeStep");
+      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      $("#s1,#s3,#s4,#s5").removeClass("activeStep");
       $("#s2").addClass("activeStep");
+      $("#learnMoreLink").attr('href', 'clinicalExperience.html');
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s1location-1); return false; } );
       $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#prevSection').css('opacity', '1');
@@ -71,12 +74,13 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("03");
       $("#title").text("Creating an Integrated Campus");
-      $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/index/original/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      // $("#diagramBack").attr('src', backDiagramURL);
+      // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/03.png';
-      $("#s1,#s2,#s4,#s5,#s6").removeClass("activeStep");
+      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      $("#s1,#s2,#s4,#s5").removeClass("activeStep");
       $("#s3").addClass("activeStep");
+      $("#learnMoreLink").attr('href', 'haci.html');
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s2location-1); return false; } );
       $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
       $('#prevSection').css('opacity', '1');
@@ -88,12 +92,13 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("04");
       $("#title").text("School of Medicine");
-      $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/index/original/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      // $("#diagramBack").attr('src', backDiagramURL);
+      // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/04.png';
-      $("#s1,#s2,#s3,#s5,#s6").removeClass("activeStep");
+      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      $("#s1,#s2,#s3,#s5").removeClass("activeStep");
       $("#s4").addClass("activeStep");
+      $("#learnMoreLink").attr('href', 'som.html');
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s3location-1); return false; } );
       $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s5location-1); return false; } );
       $('#prevSection').css('opacity', '1');
@@ -105,14 +110,15 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("05");
       $("#title").text("Incorporating Resilient Infrastructure");
-      $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      // $("#diagramBack").attr('src', backDiagramURL);
+      // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
       backDiagramURL = 'assets/diagrams/index/original/01.png';
-      $("#s1,#s2,#s3,#s4,#s6").removeClass("activeStep");
+      $("#s1,#s2,#s3,#s4").removeClass("activeStep");
       $("#s5").addClass("activeStep");
+      $("#learnMoreLink").attr('href', 'infrastructure.html');
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );
-      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s6location-1); return false; } );
+      $('#nextSection').click( function(e) {e.preventDefault(); controller.scrollTo(s5location-1); return false; } );
       $('#prevSection').css('opacity', '1');
       $('#nextSection').css('opacity', '1');
     }

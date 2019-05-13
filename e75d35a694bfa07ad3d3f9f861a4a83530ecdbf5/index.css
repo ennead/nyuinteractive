@@ -1,3 +1,9 @@
+body, html {
+  height: 100%;
+	/* margin: 0; */
+	background: url("assets/photos/fullCampus_splash.jpg") 0 / cover fixed;
+}
+
 .spacer{
 	height: 700px;
 }
@@ -40,6 +46,29 @@
 
 .box1{
 	visibility: hidden;
+}
+
+.bg {
+	/* background-color: rgba(51, 51, 51, 0.8); */
+	background: inherit;
+	width:120%;
+	height: 120%;
+	margin: -50px;
+	top: 0;
+	left: 0;
+	position: fixed;
+	filter: blur(3px);
+}
+
+.dbg {
+	background-color: rgba(51, 51, 51, 0.65);
+	width:120%;
+	height: 120%;
+	margin: -25px;
+	top: 0;
+	left: 0;
+	position: fixed;
+	/* filter: blur(8px); */
 }
 
 
