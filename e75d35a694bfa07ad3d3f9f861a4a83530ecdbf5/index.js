@@ -29,8 +29,8 @@ $(function () { // wait for document ready
 
     $("#slideCounter").text("01");
     $("#title").text("Overview / Masterplan");
-    $("#diagramBack").attr('src', backDiagramURL);
-    $("#diagramFront").attr('src', 'assets/diagrams/index/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+    // $("#diagramBack").attr('src', backDiagramURL);
+    // $("#diagramFront").attr('src', 'assets/diagrams/index/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
     $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
     backDiagramURL = 'assets/diagrams/index/01.png';
     $("#s2,#s3,#s4,#s5").removeClass("activeStep");
@@ -51,8 +51,8 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Designing the Patient-Care Experience");
-      $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/index/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      // $("#diagramBack").attr('src', backDiagramURL);
+      // $("#diagramFront").attr('src', 'assets/diagrams/index/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
       backDiagramURL = 'assets/diagrams/index/02.png';
       $("#s1,#s3,#s4,#s5").removeClass("activeStep");
