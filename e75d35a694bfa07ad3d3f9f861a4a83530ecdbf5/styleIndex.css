@@ -575,8 +575,8 @@ display: none;
 
 
 	#enneadLogo{
-		width:90px;
-		height:13px;
+		width:108px;
+		height:16px;
 	}
 
 	.navBar{
@@ -670,6 +670,14 @@ display: none;
 		height:18px;
 	}
 
+	.button {
+		padding: 5px 12px;
+		padding-top: 8px;
+
+		font-size: 18px;
+
+	}
+
 }
 
 @media all and (max-width:1200px) and (min-width:769px){
@@ -709,6 +717,13 @@ display: none;
 			top: 27%;
 			width: 22.5%;
 			right: 5%;	}
+
+	.button {
+			padding: 4px 12px;
+			padding-top: 6px;
+			font-size: 12px;
+
+					}
 
 	#enneadLogo{
 			width:120px;

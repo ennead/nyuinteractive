@@ -25,13 +25,13 @@
 .scrollingContainer{
 	display: inline-block;
 	position: fixed;
-	top: 23%;
+	top: 28%;
 	left: 300px;
 	width:45%;
 }
 
 #diagramBack{
-	top: 23%;
+	top: 28%;
 	left: 300px;
 	width:45%;
 	height: auto;

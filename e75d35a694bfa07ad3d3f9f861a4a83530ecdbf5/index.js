@@ -29,10 +29,10 @@ $(function () { // wait for document ready
 
     $("#slideCounter").text("01");
     $("#title").text("Overview / Masterplan");
-    // $("#diagramBack").attr('src', backDiagramURL);
-    // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+    $("#diagramBack").attr('src', backDiagramURL);
+    $("#diagramFront").attr('src', 'assets/diagrams/index/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
     $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-    backDiagramURL = 'assets/diagrams/index/original/01.png';
+    backDiagramURL = 'assets/diagrams/index/01.png';
     $("#s2,#s3,#s4,#s5").removeClass("activeStep");
     $("#s1").addClass("activeStep");
     $("#learnMoreLink").attr('href', 'overview.html');
@@ -51,10 +51,10 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Designing the Patient-Care Experience");
-      // $("#diagramBack").attr('src', backDiagramURL);
-      // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#diagramBack").attr('src', backDiagramURL);
+      $("#diagramFront").attr('src', 'assets/diagrams/index/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/02.png';
       $("#s1,#s3,#s4,#s5").removeClass("activeStep");
       $("#s2").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'clinicalExperience.html');
@@ -77,7 +77,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index//01.png';
       $("#s1,#s2,#s4,#s5").removeClass("activeStep");
       $("#s3").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'haci.html');
@@ -95,7 +95,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/01.png';
       $("#s1,#s2,#s3,#s5").removeClass("activeStep");
       $("#s4").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'som.html');
@@ -113,7 +113,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/01.png';
       $("#s1,#s2,#s3,#s4").removeClass("activeStep");
       $("#s5").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'infrastructure.html');
