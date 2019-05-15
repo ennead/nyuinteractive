@@ -32,7 +32,7 @@ $(function () { // wait for document ready
     // $("#diagramBack").attr('src', backDiagramURL);
     // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
     $("#sectionBody").text("Over the course of a decade, Ennead worked with NYU Langone Health to transform their midtown Manhattan campus and create a world-class integrated academic medical center. Beginning with a comprehensive master plan in 2008, Ennead created a road map for expanding the campus into the surrounding neighborhood, rationalizing the program adjacencies, replacing obsolete buildings and infrastructure, and developing 1.3 million square feet for new research, patient care, and education.");
-    backDiagramURL = 'assets/diagrams/index/original/01.png';
+    backDiagramURL = 'assets/diagrams/index/01.png';
     $("#s2,#s3,#s4,#s5").removeClass("activeStep");
     $("#s1").addClass("activeStep");
     $("#learnMoreLink").attr('href', 'overview.html');
@@ -54,7 +54,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("The Campus Transformation initiative called for the development of a consolidated hospital complex on the north side of the campus, integrating the legacy Tisch Hospital with a new high-tech tower OR and bed tower. The combined facility will hold 600 beds and 50 operating and procedure rooms, the first in New York City to provide all private patient rooms. In designing the new hospital, Ennead worked with NYU Langone leadership to re-imagine all of the processes involved in the delivery of care and to establish new standards for patient and staff experience, safety, efficiency, sustainability, and resilience. ");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/01.png';
       $("#s1,#s3,#s4,#s5").removeClass("activeStep");
       $("#s2").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'clinicalExperience.html');
@@ -77,7 +77,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("The seven major buildings on campus are integrated at the ground level, creating a single coherent public realm. As part of the Campus Transformation, Ennead reorganized and redesigned the network of public spaces and outdoor courtyards across the campus, clarifying circulation and wayfinding and developing a series of branded retail and amenity spaces.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/01.png';
       $("#s1,#s2,#s4,#s5").removeClass("activeStep");
       $("#s3").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'haci.html');
@@ -95,7 +95,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("The Master Plan created for the first time a coherent identity and sense of place for the School of Medicine, taking advantage of new construction within the lower public floors of the new research tower and strategic renovation and adaptive re-use of the other spaces surrounding Alumni Courtyard.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/01.png';
       $("#s1,#s2,#s3,#s5").removeClass("activeStep");
       $("#s4").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'som.html');
@@ -113,7 +113,7 @@ $(function () { // wait for document ready
       // $("#diagramBack").attr('src', backDiagramURL);
       // $("#diagramFront").attr('src', 'assets/diagrams/index/original/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Located on a vulnerable stretch of the East River coastline, NYU Langone developed and implemented a resiliency master plan including elevated infrastructure, on-site generation of heat and power, and a perimeter flood barrier with operable flood gates.");
-      backDiagramURL = 'assets/diagrams/index/original/01.png';
+      backDiagramURL = 'assets/diagrams/index/01.png';
       $("#s1,#s2,#s3,#s4").removeClass("activeStep");
       $("#s5").addClass("activeStep");
       $("#learnMoreLink").attr('href', 'infrastructure.html');
