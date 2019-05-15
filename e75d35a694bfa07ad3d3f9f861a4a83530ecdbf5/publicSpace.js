@@ -153,7 +153,7 @@ function hpcontent5() {
 
 function hpcontent6() {
   $("#hotspotTitle").text("Gift Shop");
-  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#hotspotBody").text("Part of a campus-wide retail and food strategy, a central gift shop was developed in a prominent location along the patient-care concourse.");
   $("#carousel01").attr('src', 'assets/photos/giftShop01.png');
 
   $("#carouselNav").css("visibility", "hidden");
@@ -170,31 +170,23 @@ function hpcontent7() {
 
 function hpcontent8() {
   $("#hotspotTitle").text("Meditation Room");
-  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#hotspotBody").text("A meditation room, located just off the main Tisch lobby, accommodates individual reflection and prayer as well as a variety of more formal gatherings and services.");
   $("#carousel01").attr('src', 'assets/photos/meditationRoom01.png');
 
   $("#carouselNav").css("visibility", "hidden");
 }
 
 function hpcontent9() {
-  $("#hotspotTitle").text("NE Terrace");
-  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
-  $("#carousel01").attr('src', 'assets/photos/nePatio01.png');
-
-  $("#carouselNav").css("visibility", "hidden");
-}
-
-function hpcontent9() {
-  $("#hotspotTitle").text("NE Terrace");
-  $("#hotspotBody").text("The terrace includes a dining area, a more densely planted garden, and a dedicated play space for children.");
+  $("#hotspotTitle").text("Roof Terrace");
+  $("#hotspotBody").text("The north end of the roof terrace provides dramatic views over the East River, outdoor dining, and valuable respite space for family and staff.");
   $("#carousel01").attr('src', 'assets/photos/nePatio01.png');
 
   $("#carouselNav").css("visibility", "hidden");
 }
 
 function hpcontent10() {
-  $("#hotspotTitle").text("SE Terrace");
-  $("#hotspotBody").text("The terrace includes a dining area, a more densely planted garden, and a dedicated play space for children.");
+  $("#hotspotTitle").text("Garden Terrace");
+  $("#hotspotBody").text("At the south end of the terrace, a more intimate garden with winding paths is planted with native and adaptive species that attract pollinators and butterflies.");
   $("#carousel01").attr('src', 'assets/photos/sePatio01.png');
 
   $("#carouselNav").css("visibility", "hidden");
@@ -205,7 +197,7 @@ function hpcontent11() {
   $("#hotspotBody").text("The seventh-floor café and terrace allows for outdoor dining, overlooking the East River.");
   $("#carousel01").attr('src', 'assets/photos/kimmelCafe01.png');
   $("#carousel02").attr('src', 'assets/photos/kimmelCafe02.png');
-
+  $("#carousel03").attr('src', 'assets/photos/kimmelCafe03.png');
   $("#carouselNav").css("visibility", "visible");
 }
 
@@ -237,7 +229,7 @@ function hpcontent14() {
 
 function hpcontent15() {
   $("#hotspotTitle").text("Hassenfeld Reception");
-  $("#hotspotBody").text("Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.");
+  $("#hotspotBody").text("The Children’s Hospital includes a dedicated outdoor play space for young patients and their families.");
   $("#carousel01").attr('src', 'assets/photos/hassenfeldDesk01.png');
 
   $("#carouselNav").css("visibility", "hidden");

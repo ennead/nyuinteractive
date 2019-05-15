@@ -24,10 +24,10 @@ $(function () { // wait for document ready
   function updateBox0 () {
 
     $("#slideCounter").text("01");
-    $("#title").text("Public Circulation");
+    $("#title").text("Public Space");
     $("#diagramBack").attr('src', backDiagramURL);
     $("#diagramFront").attr('src', 'assets/diagrams/SOM/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
-    $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+    $("#sectionBody").text("The new research tower serves as the front door for the School of Medicine, and its double-height lobby is designed as an academic commons, with informal meeting spaces, conference space, and café. Across Alumni Courtyard is the new Medical Library and student study space, including group study rooms and project-based learning labs.");
     backDiagramURL = 'assets/diagrams/SOM/01.png';
     $("#s2,#s3").removeClass("activeStep");
     $("#s1").addClass("activeStep");
@@ -45,10 +45,10 @@ $(function () { // wait for document ready
 
     if (e.type == "enter") {
       $("#slideCounter").text("02");
-      $("#title").text("Primary Student / Researcher Circulation");
+      $("#title").text("Circulation");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/SOM/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("With the addition of a new bridge connecting a pair of research towers, a continuous loop of circulation was created, wrapping around Alumni Courtyard on two levels. This clear circulation loop provides new clarity and coherence to the set of spaces that make up the School of Medicine.");
       backDiagramURL = 'assets/diagrams/SOM/02.png';
       $("#s1,#s3").removeClass("activeStep");
       $("#s2").addClass("activeStep");
@@ -67,10 +67,10 @@ $(function () { // wait for document ready
   function updateBox2 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("03");
-      $("#title").text("Instructional / Meeting Spaces");
+      $("#title").text("Academic Resources");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/SOM/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("A variety of formal and informal meeting and instructional space is organized on two levels, surrounding Alumni Courtyard. In addition to teaching and conference space, the academic amenities include a cafeteria, the faculty dining room, the medical library and student study space, and the office of the Dean of Students.");
       backDiagramURL = 'assets/diagrams/SOM/03.png';
       $("#s1,#s2").removeClass("activeStep");
       $("#s3").addClass("activeStep");

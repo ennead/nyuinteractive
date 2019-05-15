@@ -95,7 +95,7 @@
 		.scrollingContainer{
 			display: inline-block;
 			position: fixed;
-			top: 30%;
+			top: 28%;
 			left: 120px;
 			width:55%;
 		}
@@ -107,7 +107,7 @@
 		}
 
 		#diagramBack{
-			top: 30%;
+			top: 28%;
 			left: 120px;
 			width:55%;
 			height: auto;
@@ -116,7 +116,7 @@
 		}
 
 		.hotspotContainer {
-			top: 30%;
+			top: 28%;
 			left: 120px;
 			position: fixed;
 			z-index: 1;
@@ -128,9 +128,9 @@
 		.scrollingContainer{
 			display: inline-block;
 			position: fixed;
-			top: 30%;
+			top: 25%;
 			left: 150px;
-			width:55%;
+			width:50%;
 		}
 
 		#diagramFront{
@@ -140,9 +140,9 @@
 		}
 
 		#diagramBack{
-			top: 30%;
+			top: 25%;
 			left: 150px;
-			width:55%;
+			width:50%;
 			height: auto;
 			position: fixed;
 			z-index: -2;

@@ -26,10 +26,10 @@ $(function () { // wait for document ready
   function updateBox0 () {
 
     $("#slideCounter").text("01");
-    $("#title").text("NYU Langone Main Campuses");
+    $("#title").text("NYU Langone Manhattan Campuses");
     $("#diagramBack").attr('src', backDiagramURL);
     $("#diagramFront").attr('src', 'assets/diagrams/Overview/01.jpg').stop(true,true).hide().delay(200).fadeIn("slow");
-    $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+    $("#sectionBody").text("NYU Langone Medical Center occupies a ten-acre superblock on the east edge of Manhattan, a site that was consolidated and deeded to NYU by New York City in 1949. The campus developed incrementally over four decades, following a modernist “tower-in-the-park” master plan. More recently, NYU Langone developed a stand-alone orthopedic hospital about a mile to the south.");
     backDiagramURL = 'assets/diagrams/Overview/01.jpg';
     $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
     $("#s2,#s3,#s4,#s5").removeClass("activeStep");
@@ -51,7 +51,7 @@ $(function () { // wait for document ready
       $("#title").text("First Avenue Biomedical Corridor");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Overview/02.jpg').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("NYU Langone grew out of a historic relationship with Bellevue Hospital, located just to the south along First Avenue. NYU physicians continue to provide the care at Bellevue, and students do much of their training there. These two medical centers, along with the VA Hospital, the NYU College of Nursing and Dentistry, and Alexandria Center for Life Science, make up a dense institutional precinct dedicated to healthcare and biomedical research and education.");
       backDiagramURL = 'assets/diagrams/Overview/02.jpg';
       $("#s1,#s3,#s4,#s5").removeClass("activeStep");
       $("#s2").addClass("activeStep");
@@ -70,10 +70,10 @@ $(function () { // wait for document ready
   function updateBox2 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("03");
-      $("#title").text("Neighborhood and Major Transit");
+      $("#title").text("Extending into the Neighborhood");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Overview/03.jpg').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("To accommodate the projected growth of nearly 2.5 million square feet, the master plan identified a target area for growth and expansion beyond the historic superblock. Administrative programs and ambulatory care would be clustered along the busy 34th Street axis, which connects the main campus to the Lexington Avenue subway, while student housing and research would remain within the institutional core along both sides of First Avenue.");
       backDiagramURL = 'assets/diagrams/Overview/03.jpg';
       $("#s1,#s2,#s4,#s5").removeClass("activeStep");
       $("#s3").addClass("activeStep");
@@ -87,10 +87,10 @@ $(function () { // wait for document ready
   function updateBox3 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("04");
-      $("#title").text("Other Campuses");
+      $("#title").text("Planning for Growth");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Overview/04.jpg').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("With more and more patient care taking place in an ambulatory setting, many programs which were originally located on the main campus or embedded within the hospital, could be relocated to new facilities that were more accessible by transit and more convenient to where people live and work. This shift in turn opened up opportunities to expand and modernize the core inpatient, research, and education programs that benefit from close integration within the academic campus environment.");
       backDiagramURL = 'assets/diagrams/Overview/04.jpg';
       $("#s1,#s2,#s3,#s5").removeClass("activeStep");
       $("#s4").addClass("activeStep");
@@ -104,11 +104,11 @@ $(function () { // wait for document ready
   function updateBox4 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("05");
-      $("#title").text("Other Campuses");
+      $("#title").text("Becoming a Regional Healthcare System");
       $("#diagramBack").attr('src', backDiagramURL);
-      $("#diagramFront").attr('src', 'assets/diagrams/Overview/05.jpg').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
-      backDiagramURL = 'assets/diagrams/Overview/05.jpg';
+      $("#diagramFront").attr('src', 'assets/diagrams/Overview/06.jpg').stop(true,true).hide().delay(200).fadeIn("slow");
+      $("#sectionBody").text("As the transformation of the main campus neared completion, NYU Langone began to evolve from a Manhattan-based academic medical center to a regional healthcare system with multiple hospital sites, each with a corresponding ambulatory network. Ennead is now engaged in a similar master planning process for the new Brooklyn and Long Island campuses.");
+      backDiagramURL = 'assets/diagrams/Overview/06.jpg';
       $("#s1,#s2,#s3,#s4").removeClass("activeStep");
       $("#s5").addClass("activeStep");
       $('#prevSection').click( function(e) {e.preventDefault(); controller.scrollTo(s4location-1); return false; } );

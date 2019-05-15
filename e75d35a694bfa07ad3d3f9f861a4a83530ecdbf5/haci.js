@@ -28,7 +28,7 @@ $(function () { // wait for document ready
     $("#title").text("Public Experience");
     $("#diagramBack").attr('src', backDiagramURL);
     $("#diagramFront").attr('src', 'assets/diagrams/HACI/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
-    $("#sectionBody").text("The new tower houses 32 operating and procedure suites located on three floors. All staff support spaces and sterile processing are centralized off the floor, to maximize the efficiency of the planning.");
+    $("#sectionBody").text("The lower two floors of the campus consist of a network of public spaces and courtyards, connecting the patient care areas along First Avenue to the research labs and academic spaces of the School of Medicine, newly consolidated with a main entrance on 30th Street.");
     backDiagramURL = 'assets/diagrams/HACI/01.png';
     $("#s2,#s3,#s4").removeClass("activeStep");
     $("#s1").addClass("activeStep");
@@ -46,10 +46,10 @@ $(function () { // wait for document ready
 
     if (e.type == "enter") {
       $("#slideCounter").text("02");
-      $("#title").text("Integration of Greenspace");
+      $("#title").text("Integration of Green Space");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/HACI/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("The campus circulation is organized around three major open spaces: the arrival plaza for the hospital, at the north end of the campus; the main central courtyard, which serves the entire medical center community; and Alumni Courtyard, the green space at the heart of the School of Medicine.");
       backDiagramURL = 'assets/diagrams/HACI/02.png';
       $("#s1,#s3,#s4").removeClass("activeStep");
       $("#s2").addClass("activeStep");
@@ -71,7 +71,7 @@ $(function () { // wait for document ready
       $("#title").text("Unified Public Circualtion");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/HACI/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("To maximize utilization, all periop bays can be used interchangeably for patient prep and recovery. At the end of the day, as the census declines, the unit can contract to a smaller footprint.");
+      $("#sectionBody").text("A broad public concourse connects all of the patient-care facilities along First Avenue, including the Kimmel Pavilion, Tisch Hospital, and two buildings housing ambulatory services and physician practice space. The concourse is lined with patient services and retail and food-service amenities.");
       backDiagramURL = 'assets/diagrams/HACI/03.png';
       $("#s1,#s2,#s4").removeClass("activeStep");
       $("#s3").addClass("activeStep");
@@ -88,7 +88,7 @@ $(function () { // wait for document ready
       $("#title").text("Visitor Amenities");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/HACI/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("Patient and staff services and amenities are organized along the main north-south concourse, while teaching and conference space and amenities serving the student and research community cluster around Alumni Courtyard to the south.");
       backDiagramURL = 'assets/diagrams/HACI/04.png';
       $("#s1,#s2,#s3").removeClass("activeStep");
       $("#s4").addClass("activeStep");

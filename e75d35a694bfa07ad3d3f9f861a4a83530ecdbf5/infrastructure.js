@@ -25,10 +25,10 @@ $(function () { // wait for document ready
   function updateBox0 () {
 
     $("#slideCounter").text("01");
-    $("#title").text("Cogeneration Plant");
+    $("#title").text("Materials Management");
     $("#diagramBack").attr('src', backDiagramURL);
     $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
-    $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+    $("#sectionBody").text("Just as the first floor unifies all the public space and circulation across the campus, the lower floor is a comprehensive service level connecting all buildings. Ennead developed major new materials management facilities, including clean and soiled docks. Automated guided vehicles move supplies, medicine, and meals through a new network of service tunnels.");
     backDiagramURL = 'assets/diagrams/Infrastructure/01.png';
     $("#s2,#s3,#s4").removeClass("activeStep");
     $("#s1").addClass("activeStep");
@@ -46,10 +46,10 @@ $(function () { // wait for document ready
 
     if (e.type == "enter") {
       $("#slideCounter").text("02");
-      $("#title").text("Materials Management and Loading");
+      $("#title").text("Cogeneration Plant");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("A 7.5 megawatt combined heat and power plan (cogeneration) was developed and integrated into the base of the hospital, facing the FDR Drive. The plant is capable of producing the entire steam load for the campus, allowing NYU to disconnect from the aging and unreliable utility steam service. In the event of a prolonged power outage, the campus can operate in “Island Mode” and maintain all essential patient care and research services.");
       backDiagramURL = 'assets/diagrams/Infrastructure/02.png';
       $("#s1,#s3,#s4").removeClass("activeStep");
       $("#s2").addClass("activeStep");
@@ -71,7 +71,7 @@ $(function () { // wait for document ready
       $("#title").text("Primary Electric Service");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("Elevated well above the five-hundred-year flood plane, the new centralized electrical service replaces a series of aging and unreliable services scattered across the cellar level of the campus. Operating in conjunction with the cogeneration plant, the new service distributes power via medium-voltage lines to substations in each of the seven buildings on campus.");
       backDiagramURL = 'assets/diagrams/Infrastructure/03.png';
       $("#s1,#s2,#s4").removeClass("activeStep");
       $("#s3").addClass("activeStep");
@@ -85,10 +85,10 @@ $(function () { // wait for document ready
   function updateBox3 (e) {
     if (e.type == "enter") {
       $("#slideCounter").text("04");
-      $("#title").text("????");
+      $("#title").text("Perimeter Flood Protection");
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Infrastructure/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
-      $("#sectionBody").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.");
+      $("#sectionBody").text("The design team worked with NYU Langone to establish new flood protection standards for the campus that anticipate sea-level rise and more frequent and severe flooding. The exterior wall, foundations, and structure of the new buildings were enhanced as part of a perimeter flood barrier system, and all major mechanical and electrical infrastructure was relocated about the new design flood elevation.");
       backDiagramURL = 'assets/diagrams/Infrastructure/04.png';
       $("#s1,#s2,#s3").removeClass("activeStep");
       $("#s4").addClass("activeStep");
