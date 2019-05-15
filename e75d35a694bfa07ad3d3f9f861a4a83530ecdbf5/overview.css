@@ -27,13 +27,13 @@
 	position: fixed;
 	top: 26%;
 	left: 300px;
-	width:45%;
+	width:40%;
 }
 
 #diagramBack{
 	top: 26%;
 	left: 300px;
-	width:45%;
+	width:40%;
 	height: auto;
 	position: fixed;
 	z-index: -2;}
