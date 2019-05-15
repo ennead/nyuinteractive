@@ -214,6 +214,14 @@ left: 5.5%;
 	font-weight: normal;
 	color: #333333;
 	letter-spacing: .03em;
+
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: #333333; /* Green */
+color: white;
 }
 
 
