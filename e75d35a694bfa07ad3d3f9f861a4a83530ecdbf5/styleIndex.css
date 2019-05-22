@@ -210,8 +210,9 @@ transform: translate3d(-12px, 0px, 0px);
 }
 
 .button {
-  background-color: white;
+  /* background-color: white; */
   /* border: solid 2px white; */
+	border: solid 2px white;
   padding: 5px 15px;
 	padding-top: 8px;
   text-align: center;
@@ -223,9 +224,18 @@ transform: translate3d(-12px, 0px, 0px);
 	font-family: 'FoundersGrotesk Semibold';
 	font-size: 14px;
 	font-weight: normal;
-	color: #333333;
+	color: white;
 	letter-spacing: .03em;
+
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
 }
+
+.button:hover {
+	background-color: white;
+	color: #333333;
+}
+
 
 #backArrow{
 padding-left: 20px;
@@ -722,8 +732,7 @@ display: none;
 			padding: 4px 12px;
 			padding-top: 6px;
 			font-size: 12px;
-
-					}
+	}
 
 	#enneadLogo{
 			width:120px;

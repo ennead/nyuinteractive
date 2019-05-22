@@ -28,8 +28,9 @@ $(function () { // wait for document ready
 
     $("#slideCounter").text("01");
     $("#title").text("Floor Organization");
-    $("#diagramBack").attr('src', backDiagramURL);
-    $("#diagramFront").attr('src', 'assets/diagrams/Patient Floor/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+    $('#videoFront').css('visibility', 'visible');
+    $("#diagramBack").attr('src', '');
+    $("#diagramFront").attr('src', '').stop(true,true).hide().delay(200).fadeIn("slow");
     $("#sectionBody").text("The structure of the bed tower follows the path of four train tunnels, which run beneath the site, informing the building’s geometry. The 34-bed floor is divided into two sub-units, to reduce the scale of the experience for both staff and families.");
     backDiagramURL = 'assets/diagrams/Patient Floor/01.png';
     $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
@@ -50,6 +51,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Arrival and Wayfinding");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Patient Floor/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("All visitors arrive at the center of the floor and are greeted at a reception area. Each corridor ends in a unique view to the outside, bringing daylight into the interior of the floor and helping family members and visitors stay oriented within the unit. ");
@@ -72,6 +74,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("03");
       $("#title").text("Offstage Servicing");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Patient Floor/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("A true off-stage corridor bisects the floor. All clean, soiled, equipment and medication rooms can be accessed and stocked overnight from this service core without disturbing patients and families at the perimeter.");
@@ -89,6 +92,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("04");
       $("#title").text("Clinical Integration Center");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Patient Floor/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Work space and collaboration areas for the care team are clustered at the corners of the floor, providing access to daylight for staff and creating small “care neighborhoods” in each of the four quadrants. Staff have ready access to both the patient rooms at the perimeter and the support spaces within the core.");
@@ -106,6 +110,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("05");
       $("#title").text("Same-Handed Patient Rooms");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Patient Floor/05.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Each floor houses thirty-four acuity-adaptable, same-handed patient rooms. Inboard toilets increase privacy and reduce noise from the corridors, while maximizing family space, light, and views within the room. ");
@@ -123,6 +128,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("06");
       $("#title").text("Patient Room");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Patient Floor/06.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("All patient rooms are designed to accommodate ICU-level care. The room is organized to create clear, dedicated spaces clinicians and family, to maximize light and views, and to ensure the shortest and safest path from bed to toilet.");

@@ -220,7 +220,7 @@ left: 5.5%;
 }
 
 .button:hover {
-	background-color: #333333; /* Green */
+	background-color: #333333;
 color: white;
 }
 
@@ -518,6 +518,10 @@ transition: opacity .6s;
 width: 100%;
 }
 
+#hotspotWindow video{
+width: 100%;
+}
+
 #imageCarousel{
 padding-top: 20px;
 }
@@ -528,7 +532,18 @@ padding-top: 20px;
 	max-width: 100%;
 }
 
+.scrollingContainer video{
+	display: block;
+	max-width: 100%;
+}
+
 #diagramFront{
+	top:0px;
+	left:0px;
+	z-index: -1;
+}
+
+#videoFront{
 	top:0px;
 	left:0px;
 	z-index: -1;
