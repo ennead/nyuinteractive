@@ -1,0 +1,276 @@
+
+
+h2{
+color: white;
+}
+
+h3{
+color: white;
+}
+
+
+body {
+color: white;
+background-color: #333333;
+}
+
+.navBar{
+color: white;
+
+
+margin: 0 0 0 0;
+padding-left: 5%;
+padding-right: 5%;
+height: 120px;
+}
+
+.navLogo{
+flex: 5;
+margin-right: auto;
+text-align: left;
+opacity: 1;
+}
+
+#enneadLogo{
+width:140px;
+height: 21px;
+padding-top: 5px;
+}
+
+.navActive{
+margin-bottom: 0px;
+display: inline-block;
+text-decoration: none;
+line-height: 0.85;
+opacity: 1;
+}
+
+.navActive::after {
+content: '';
+display: block;
+width: 0;
+height: 2px;
+background: #000;
+transition: width .3s;
+}
+
+.navActive:hover::after {
+width: 100%;
+
+}
+
+.scrollingText{
+	position: fixed;
+	top: 25%;
+	width: 22.5%;
+	right: 100px;
+}
+
+
+
+.button {
+  /* background-color: white; */
+  /* border: solid 2px white; */
+	border: solid 2px white;
+  padding: 5px 15px;
+	padding-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+
+	font-family: 'FoundersGrotesk Semibold';
+	font-size: 14px;
+	font-weight: normal;
+	color: white;
+	letter-spacing: .03em;
+
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	background-color: white;
+	color: #333333;
+}
+
+
+#backArrow{
+padding-left: 20px;
+transform: translate3d(0px, 0px, 0px);
+transition: transform .35s ease-in-out;
+width:75px;
+height:14px
+}
+
+
+.progressStep{
+	background: white;
+}
+
+.progressStep::before{
+	background: white;
+}
+
+.progressActive{
+	background: white;
+}
+
+.progressLink{
+	background: rgb(255,255,255, 0);
+}
+
+.activeLink{
+	background: rgb(255,255,255, 0.25);
+}
+
+
+.activeStep{
+box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.25);
+transition: box-shadow 0.3s linear;
+}
+
+.tooltip .tooltiptext {
+color: white;
+}
+
+.hptooltip .hptooltiptext {
+
+color: white;
+background-color: #333333;
+}
+
+.progressCounter{
+color: white;
+}
+
+
+@media all and (max-width:480px) {
+
+	h2 {
+		font-size: 22px;
+		line-height: 22px;}
+
+	h3 {
+		font-size: 12px;}
+
+	body{
+		font-size: 14px;
+		line-height: 20px;}
+
+	.scrollingText{
+		position:fixed;
+		top: 15%;
+		width: 88.5%;
+		right: auto;
+	}
+
+	#enneadLogo{
+		width:108px;
+		height:16px;
+	}
+
+	.navBar{
+		height: 70px;
+	}
+
+	.navBox{
+		height: 70px;
+	}
+
+}
+
+@media all and (max-width:600px) and  (min-width:481px){
+
+	h2 {
+		font-size: 28px;
+		line-height: 24px;}
+
+	h3 {
+		font-size: 16px;}
+
+	body{
+		font-size: 16px;
+		line-height: 20px;}
+
+	#enneadLogo{
+		width:120px;
+		height:18px;}
+
+}
+
+@media all and (max-width:768px) and (min-width:601px){
+	h2 {
+		font-size: 32px;
+		line-height: 30px;}
+	h3 {
+		font-size: 18px;}
+	body{
+		font-size: 18px;
+		line-height: 32px;}
+
+	.navBar{
+		height: 70px;
+	}
+
+	.navBox{
+		height: 70px;
+	}
+
+	.scrollingText{
+		position:fixed;
+		top: 18%;
+		width: 78%;
+		right: auto;
+	}
+
+}
+
+@media all and (max-width:1200px) and (min-width:769px){
+
+	h2 {
+		font-size: 28px;
+		line-height: 28px;}
+	h3 {
+			font-size: 12px;}
+	body{
+			font-size: 14px;
+			line-height: 25px;}
+
+	.navBar{
+			height: 70px;	}
+
+	.navBox{
+			height: 70px;}
+
+	.scrollingText{
+			position: fixed;
+			top: 27%;
+			width: 22.5%;
+			right: 5%;	}
+
+	#enneadLogo{
+			width:120px;
+			height:18px;	}
+
+}
+
+	/* @media all and (max-width:1600px) and (min-width:1201px) {
+
+	h2 {
+		font-size: 38px;
+		line-height: 38px;}
+	h3 {
+		font-size: 14px;}
+	body{
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+
+	#enneadLogo{
+		width:120px;
+		height:18px;
+	}
+} */

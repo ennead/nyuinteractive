@@ -38,6 +38,15 @@
 	position: fixed;
 	z-index: -2;}
 
+	#videoFront{
+		top: -1000px;
+	}
+
+
+.scrollingContainer video{
+	display: block;
+	max-width: 115%;}
+
 .box1{
 	visibility: hidden;
 }

@@ -4,6 +4,10 @@ body, html {
 	background: url("assets/photos/fullCampus_splash.jpg") 0 / cover fixed;
 }
 
+body {
+line-height: 30px;
+}
+
 .spacer{
 	height: 700px;
 }
@@ -26,6 +30,11 @@ body, html {
 
 .activeLink{
 	margin-bottom: 7.23em;
+}
+
+.navBox{
+  background: none;
+  box-shadow: unset;
 }
 
 .scrollingContainer{

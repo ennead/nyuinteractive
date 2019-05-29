@@ -27,10 +27,11 @@ $(function () { // wait for document ready
 
     $("#slideCounter").text("01");
     $("#title").text("Overview");
+    $('#videoFront').css('visibility', 'visible');
     $("#diagramBack").attr('src', backDiagramURL);
-    $("#diagramFront").attr('src', 'assets/diagrams/Section/01.png').stop(true,true).hide().delay(200).fadeIn("slow");
+    $("#diagramFront").attr('src', '').stop(true,true).hide().delay(200).fadeIn("slow");
     $("#sectionBody").text("The Helen L. and Martin H. Kimmel Pavilion is an 830,000-sf new inpatient tower, focused on the highest acuity patients and the most technological advanced care.  The new tower is integrated with the mid-century Tisch Hospital building--the combined facility is designed to function as a single inpatient environment of 550 all-private patient rooms.");
-    backDiagramURL = 'assets/diagrams/Section/01.png';
+    backDiagramURL = '';
     $("#learnMore").removeClass("learnMoreActive").addClass("learnMoreHidden");
     $("#s2,#s3,#s4,#s5").removeClass("activeStep");
     $("#s1").addClass("activeStep");
@@ -49,6 +50,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("02");
       $("#title").text("Public Space and Amenities");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Section/02.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("The entry and atrium of the Kimmel Pavilion is connected to the lobby of Tisch hospital by a broad public concourse, lined with patient and staff services and retail amenities. Additional public amenities are found on the seventh floor, including a major roof terrace and garden overlooking the East River.");
@@ -73,6 +75,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("03");
       $("#title").text("OR Platform");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Section/03.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("The diagnostic and treatment areas of the hospital are integrated and shared between the two bed towers. The Kimmel Pavilion surgical reception areas now serve as the front door for all procedure-based care on the campus.");
@@ -92,6 +95,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("04");
       $("#title").text("Inpatient Units");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Section/04.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("In designing the nursing units, Ennead worked with NYU Langone to reinvent the processes, technology, and experience of care. The resulting patient room and unit, standardized over the eleven floors, serve as the prototype for inpatient care across the health system.");
@@ -111,6 +115,7 @@ $(function () { // wait for document ready
     if (e.type == "enter") {
       $("#slideCounter").text("05");
       $("#title").text("Hassenfeld Children's Hospital");
+      $('#videoFront').css('visibility', 'hidden');
       $("#diagramBack").attr('src', backDiagramURL);
       $("#diagramFront").attr('src', 'assets/diagrams/Section/05.png').stop(true,true).hide().delay(200).fadeIn("slow");
       $("#sectionBody").text("Woven through the building is a series of spaces dedicated to children and their families. Dedicated vertical circulation connects the various pediatric spaces and creates a separate and unique experience for children.");
